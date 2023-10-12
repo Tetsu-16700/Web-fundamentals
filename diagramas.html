@@ -7,5 +7,218 @@
   </head>
   <body>
     <!-- Completa el HTML según el diseño en Figma -->
+    <div class="pancake-stack">
+    
+      <header class="header sticky container bg-color">
+          <h1 class="header__logo"><a href="/index.html">{Codeable}</a></h1>
+          <nav class="header__navigation navigation">
+            <ul>
+              <li><a href="/diagramas.html">Diagramas VV</a></li>
+              <li><a href="/funciones.html">Funciones</a></li>
+              <li><a href="/dom.html">Manipulación del DOM</a></li>
+            </ul>
+          </nav>
+          <div class="header__actions">
+            <li>Fernanda Moscoso</li>
+          </div>
+  <main>
+    <strong><h1>Diagramas VV</h1></strong>
+    <strong><h3>Instrucciones</h3></strong>
+      <p>Dibuja el estado del diagrama de variables y 
+        valores para cada momento indicado por el ejercicio. 
+        Añade una imagen del diagrama al documento. 
+        El diagrama deberá contener únicamente las variables y 
+        valores que permanecen en la memoria. Luego contesta las 
+        preguntas dejando marcado (checked) el radio button o 
+        el/los checkboxes correspondientes.</p>
+
+    <strong><h2>Ejercicios</h2></strong>
+
+    <strong><h3>Ejercicio 1</h3></strong>
+      <p>Analiza el siguinete codigo y dibuja el diagrama 
+        VV al terminar de ejecutarse:</p>
+          <pre><code><span> const juan = {</span></code></pre>
+            <pre><code><span>  nombre : "juan",</span></code></pre>
+            <pre><code><span>  edad: 25,</span></code></pre>
+            <pre><code><span>  residencia : {</span></code></pre>
+            <pre><code><span>     direccion : "Loma Hermosa 240"</span></code></pre>
+            <pre><code><span>     ciudad: "Lima",</span></code></pre>
+            <pre><code><span>     pais: "Peru",</span></code></pre>
+            <pre><code><span>     } ;</span></code></pre>
+            <pre><code><span>  };</span></code></pre>
+
+            <pre><code><span> const sandra = {</span></code></pre>
+            <pre><code><span>   nombre : "sandra",</span></code></pre>
+            <pre><code><span>   edad: 25,</span></code></pre>
+            <pre><code><span>   residencia : {</span></code></pre>
+            <pre><code><span>     direccion : "Loma Hermosa 240"</span></code></pre>
+            <pre><code><span>     ciudad: "Lima",</span></code></pre>
+            <pre><code><span>     pais: "Peru",</span></code></pre>
+            <pre><code><span>     } ;</span></code></pre>
+            <pre><code><span>  };</span></code></pre>
+<!--esta imagen se pone como referencia para ser cambiada al desarrollar el figma-->
+            <img
+            src="/assets/images/Fer-images/FerAudio.jpeg"
+            alt="Fernanda Moscoso"
+            width="40"
+            height="50"
+            class="author__avatar">
+            <p>Diagrama al final de la ejecucion</p>
+        <strong><p>La expresion `juan.edad === sandra.edad` retorna:</p></strong>
+          <label><input type="checkbox">true</label>
+          <label><input type="checkbox">false</label>
+        <strong><p>La expresion `juan.residencia === sandra.residencia` retorna:</p></strong>
+          <label><input type="checkbox">true</label>
+          <label><input type="checkbox">false</label>
+        <strong><p>La expresion `juan.residencia.ciudad === sandra.residencia.ciudad` retorna:</p></strong>
+          <label><input type="checkbox">true</label>
+          <label><input type="checkbox">false</label>
+
+      <strong><h3>Ejercicio 2</h3></strong>
+        <p>Analiza el siguinete codigo y dibuja el diagrama 
+          VV al terminar de ejecutarse:</p>
+          <pre><code><span>const objeto1 = {};</span></code></pre>
+          <pre><code><span>const objeto2 = { b: 5};</span></code></pre>
+          <pre><code><span>const objeto3 = { a: 10};</span></code></pre>
+
+          <pre><code><span>objeto1.a = objeto3.a;</span></code></pre>
+          <pre><code><span>objeto2.a = objeto1.a + 5;</span></code></pre>
+          <pre><code><span>objeto3.b = objeto1.b;</span></code></pre>
+          <pre><code><span>objeto4.b = 10;</span></code></pre>
+<!--esta imagen se pone como referencia para ser cambiada al desarrollar el figma-->
+          <img
+          src="/assets/images/Fer-images/FerAudio.jpeg"
+          alt="Fernanda Moscoso"
+          width="40"
+          height="50"
+          class="author__avatar">
+          <p>Diagrama al final de la ejecucion</p>
+        <strong><p>La expresion `objeto1.a + objeto2.b === objeto.a` retorna:</p></strong>
+          <label><input type="checkbox">true</label>
+          <label><input type="checkbox">false</label>
+        <strong><p>El valor de `objeto3.b` es:</p></strong>
+          <label><input type="checkbox">5</label>
+          <label><input type="checkbox">10</label>
+          <label><input type="checkbox">null</label>
+          <label><input type="checkbox">undefined</label>
+          <label><input type="checkbox">Error</label>
+        <strong><p>La expresion `objeto1.a === objeto1.b` retorna:</p></strong>
+          <label><input type="checkbox">true</label>
+          <label><input type="checkbox">false</label>
+
+      <strong><h3>Ejercicio 3</h3></strong>
+        <p>Analiza el siguiente código y dibuja un diagrama VV 
+          para cada uno de los momentos indicados. Recuerda que 
+          una función es un valor representado por el símbolo `( )`. 
+          No es necesario escribir el contenido de la función en el diagrama.</p>
+          <pre><code><span>function agregar (arreglo, valor) {</span></code></pre>
+          <pre><code><span>   return arreglo.push(valor);</span></code></pre>
+          <pre><code><span> }</span></code></pre>
+
+          <pre><code><span>const frutas = ["pera", "manzana"];</span></code></pre>
+
+          <pre><code><span>const resultado = agregar (frutas, "durazno");</span></code></pre>
+
+          <pre><code><span> // Punto A: dibuja el diagrama en este punto</span></code></pre>
+
+          <pre><code><span>const copia = frutas;</span></code></pre>
+
+          <pre><code><span>agregar (copia, "platano");</span></code></pre>
+
+          <pre><code><span> // Punto B: dibuja el diagrama en este punto</span></code></pre>
+
+<!--esta imagen se pone como referencia para ser cambiada al desarrollar el figma-->
+          <img
+          src="/assets/images/Fer-images/FerAudio.jpeg"
+          alt="Fernanda Moscoso"
+          width="40"
+          height="50"
+          class="author__avatar">
+          <p>Diagrama en punto A</p>
+
+<!--esta imagen se pone como referencia para ser cambiada al desarrollar el figma-->
+          <img
+          src="/assets/images/Fer-images/FerAudio.jpeg"
+          alt="Fernanda Moscoso"
+          width="40"
+          height="50"
+          class="author__avatar">
+          <p>Diagrama en punto B</p>
+
+        <strong><p>El valor de resultado `resultado` es</p></strong>
+          <label><input type="checkbox">['pera','manzana','durazno']</label>
+          <label><input type="checkbox">'durazno'</label>
+          <label><input type="checkbox">3</label>
+          <label><input type="checkbox">4</label>
+        <strong><p>El valor de `frutas.length` en el Punto B es:</p></strong>
+          <label><input type="checkbox">2</label>
+          <label><input type="checkbox">3</label>
+          <label><input type="checkbox">4</label>
+          <label><input type="checkbox">undefined</label>
+
+      <strong><h3>Ejercicio 4</h3></strong>    
+      <p>Analiza el siguiente código y dibuja un diagrama VV al finalizar la ejecución. 
+        Recuerda que una función es un valor representado por el símbolo `( )`. No es necesario escribir 
+        el contenido de la función en el diagrama.</p>
+        <pre><code><span>function Personal (nombre) {</span></code></pre>
+        <pre><code><span> this.nombre = nombre;</span></code></pre>
+        <pre><code><span> }</span></code></pre>
+
+        <pre><code><span>Persona.prototype.presentarse = funcion () {</span></code></pre>
+        <pre><code><span>  return `Hola, mi nombre es ${this.nombre}`</span></code></pre>
+        <pre><code><span> };</span></code></pre>
+
+        <pre><code><span>function Mago(nombre, casa) {</span></code></pre>
+        <pre><code><span>  Personal.call (this, nombre);</span></code></pre>
+        <pre><code><span>  this.casa = casa;</span></code></pre>
+        <pre><code><span> }</span></code></pre>
+
+        <pre><code><span>Mago.prototype = Object.create(Persona.prototype);</span></code></pre>
+        <pre><code><span>Mago.prototype.constructor = Mago;</span></code></pre>
+
+        <pre><code><span>Mago.prototype.invocarHechizo = function () {</span></code></pre>
+        <pre><code><span>   return `${this.nombre} invoca un hechizo`;</span></code></pre>
+        <pre><code><span> };</span></code></pre>
+
+        <pre><code><span>const petunia = new Persona("Petunia");</span></code></pre>
+        <pre><code><span>const harry = new Mago("Harry", "Gryffindor");</span></code></pre>
+
+<!--esta imagen se pone como referencia para ser cambiada al desarrollar el figma-->
+          <img
+          src="/assets/images/Fer-images/FerAudio.jpeg"
+          alt="Fernanda Moscoso"
+          width="40"
+          height="50"
+          class="author__avatar">
+          <p>Diagrama al final de la ejecucion</p>
+
+          <strong><p>Marca todas las correctas</p></strong>
+            <label><input type="checkbox">`Persona` y `Mago` son funciones constructoras</label>
+            <label><input type="checkbox"> El prototipo de `harry` es `petunia`</label>
+            <label><input type="checkbox">Los objetos creado con la funcion `Mago` tiene acceso al metodo `presentarse`</label>
+            <label><input type="checkbox">El uso de la palabra `new` es opcional</label>
+            <label><input type="checkbox">Solo el objeto `harry` tiene acceso al metodo `invocarHechizo`</label>
+          <strong><p>`harry` es una instancia de `Persona `</p></strong>
+            <label><input type="checkbox">true</label>
+            <label><input type="checkbox">false</label>
+          <strong><p>La expresion `harry.invocarHechizo.call(petunia)` retorna</p></strong>
+            <label><input type="checkbox">'Harry invoca in hechizo'</label>
+            <label><input type="checkbox">'Petunia invoca un hechizo'</label>
+            <label><input type="checkbox">Error</label>
+
+      <p>Re-escribe el codigo usando la sintaxis de Clase de 
+        JavaScript </p>
+           
+       <pre><code><span> //tu codigo aqui</span></code></pre>
+
+       <pre><code><span> const petunia = new Persona ("Petunia");</span></code></pre>
+       <pre><code><span> const harry = new Mago("Harry", "Gryffindor");</span></code></pre>
+
+          
+
+  </main>
+</header>
+</div>
+
   </body>
 </html>
