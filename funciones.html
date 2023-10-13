@@ -9,161 +9,185 @@
   <body>
     <!-- Completa el HTML según el diseño en Figma -->
     <div class="pancake-stack">
-    
-      <header class="header sticky container bg-color">
-          <h1 class="header__logo"><a href="/index.html">{Codeable}</a></h1>
-          <nav class="header__navigation navigation">
-            <ul>
-              <a href="/diagramas.html">Diagramas VV</a>
-              <a href="/funciones.html">Funciones</a>
-              <a href="/dom.html">Manipulación del DOM</a>
-            </ul>
-          </nav>
-          <div class="header__actions">
-            <ul>
-               <a>Fernanda Moscoso</a>
-            </ul>
-          </div>
-        </header>
-      <main>
-        <div class="section">
-          <div class="container justify">
-            <article class="article">
-                  <strong><h1>Funciones</h1></strong>
-
-                  <strong><h2>Instrucciones</h2></strong>
-                  <p>Completa las funciones del archivo `funciones.js` siguiendo 
-                    las indicaciones a fin de que los test de la pagina <a href="test.html">test.html</a>
-                    pasen exitosamente. Deja una copia de tu codigo en esta pagina.</p>
-                  
-                  <strong><h2>Funcion `interactuarCadenas`</h2></strong>
-
-                  <strong><h3>Descripcion</h3></strong>
-                  <p>Dadas dos cadenas de texto compuestas por los simbolor `+` y`-`-, tu tarea es
-                    devolver una nueva cadena que muestre como interactuan las dos cadenas originales
-                    dee la siguiente manera</p>
-                  <ul>
-                    <li>Dado un simbolo positivo (`+`) interactuan con otro positivo, permanece positivo.</li>
-                    <li>Cuando un simbolo negativo (`-`) interactuan con otro negativo, permanece negativo</li>
-                    <li>Pero cuando un simbolo negativo interactua con un simbolo positivo, se neutralizan 
-                      y se muestran como el numero `0`.</li>
-                  </ul>
-
-                  <strong><h3>Requerimiento</h3></strong>
-                  <p>Escribe una funcion `interactuarCadenas` que toma dos cadenas de igual longitud como
-                    argumento y devuelve una nueva cadena de acuerdo con las reglas de interaccion mencionadas.</p>
-
-                  <strong><h3>Ejemplo</h3></strong>
-                    <pre><code><span>cosnt resultado = interactuarCadenas ("+-+", "+--");</span></code></pre>
-                    <pre><code><span>console.log(resultado0; // Devuelve "+-0"</span></code></pre>
-
-                  <strong><h3>Respuesta</h3></strong>
-                    <pre><code><span>function interactuarCadenas(cadena1, cadena2) {</span></code></pre>
-                    <pre><code><span> // Tucodigo aqui</span></code></pre>
-                    <pre><code><span> } </span></code></pre>
-
-                  <strong><h2>Funcion `generarApodo`</h2></strong>
-
-                  <strong><h3>Descripcion</h3></strong>
-                  <p>Tu objeto es escribir una funcion llamada `generarApodo` que tome un string ` nombre `
-                    como argumento y devulva los primeros 3 o 4 caracteres como apodo.</p>
-                  
-                  <strong><h3>Requerimiento</h3></strong>
-
-                  <p> Si la tercera letra es una consonante, devuelve las primeras 3 letras.</p>
-                    <pre><code><span>generarApodo("Roberto") // "Rob"</span></code></pre>
-                    <pre><code><span>generarApodo("Kimberly") // "Kim"</span></code></pre>
-                    <pre><code><span>generarApodo("Samuel") // "Sam"</span></code></pre>
-
-                  <p>Si la tercera letra es una vocal, devuelve las primeras 4 letras.</p>
-                    <pre><code><span>generarApodo("Jeannie") // "Jean"</span></code></pre>
-                    <pre><code><span>generarApodo("Douglas") // "Doug"</span></code></pre>
-                    <pre><code><span>generarApodo("Gregory") // "Greg"</span></code></pre>
-
-                  <p>Si el string tiene menos de 4 caracteres, lanza un Error con el mensaje "Nombre muy corto"</p>
-
-                  <p>Ten cuenta que:</p>
-                  <ul>
-                    <li>Las vocales son solo "aeiou", asi que no cueentes la letra "y".</li>
-                    <li>El argumento de entrada siempre sera un string</li>
-                  </ul>
-
-                  <strong><h3>Respuesta</h3></strong>
-                    <pre><code><span>function generarApodo (nombre) {</span></code></pre>
-                    <pre><code><span>   // tu codigo aqui</span></code></pre>
-                    <pre><code><span>}</span></code></pre>
-
-                  <strong><h2>Funcion `obtenerMarcador `</h2></strong>
-
-                  <strong><h3>Descripcion</h3></strong>
-
-                  <p>TRabajas en un estadio de futbol de ligas menores y has decidido implementar un sistema
-                    para autorizar el marcador en juego. Tienes un modulo de reconocimiento de voz que
-                    convierte lo que el arbitro dice en una cadena de texto. Tu reto actual es convertir ese 
-                    texto en un par de numeros que prepresenten el marcador actual.</p>
-                  
-                  <strong><h3> Requerimiento</h3></strong>
-                  <p>Escribe una funcion `obtenerMarcador` que recibe un texto y retorna un arreglo con dos
-                    numeros que representa el marcador del juego.</p>
+      <div class="section">
+              <header class="header">
+                <svg class="logo-2" xmlns="http://www.w3.org/2000/svg" width="262" height="52" viewBox="0 0 262 52" fill="none">
+                  <path d="M18.1077 5.16973C15.5871 5.14248 12.6022 5.03348 12.3808 8.42032C12.2321 10.6809 12.676 12.7949 13.0496 15.0044C13.7104 18.9237 13.7183 24.2146 9.12798 25.8461C9.10987 25.8526 9.0939 25.8641 9.08186 25.8793C9.06983 25.8946 9.06221 25.913 9.05986 25.9324C9.04283 26.063 9.10186 26.1277 9.22221 26.1743C13.4572 27.774 13.6411 32.361 13.1767 36.1429C13.0235 37.3828 12.5704 39.364 12.4206 40.9127C12.122 44.0043 12.3241 46.6804 16.215 46.7655C17.7008 46.7981 19.1696 46.8011 20.6214 46.7746C20.6386 46.7743 20.6557 46.7774 20.6716 46.7837C20.6876 46.79 20.7021 46.7994 20.7144 46.8114C20.7267 46.8233 20.7364 46.8376 20.743 46.8533C20.7497 46.869 20.7531 46.8859 20.7531 46.9029L20.7554 51.5307C20.7554 51.5431 20.7505 51.5549 20.7417 51.5636C20.733 51.5724 20.7212 51.5773 20.7088 51.5773C18.7681 51.5954 16.8247 51.5901 14.8787 51.5614C14.1884 51.5515 13.4731 51.4539 12.7328 51.2685C7.91653 50.0638 6.69487 46.375 7.07181 41.7982C7.25007 39.6297 7.85181 37.4952 8.04256 35.3493C8.20832 33.4782 8.34797 31.5787 7.17854 29.9914C5.8229 28.151 3.21153 28.4121 0.856757 28.4189C0.841701 28.4189 0.827261 28.4131 0.816615 28.4026C0.805969 28.3922 0.799988 28.378 0.799988 28.3633V23.6242C0.799988 23.6171 0.801397 23.61 0.804136 23.6034C0.806875 23.5967 0.810889 23.5907 0.81595 23.5857C0.82101 23.5806 0.827018 23.5766 0.83363 23.5739C0.840242 23.5711 0.847329 23.5697 0.854486 23.5697C2.58707 23.5674 4.92027 23.8172 6.41443 22.7341C7.55208 21.9098 8.11636 20.4588 8.13679 19.0622C8.17199 16.5985 7.80867 14.7489 7.31478 11.9968C7.06349 10.5972 6.9719 9.19238 7.04002 7.78224C7.24098 3.63242 9.63776 1.06078 13.8103 0.504448C14.2546 0.445409 14.9354 0.413996 15.8528 0.410212C17.4704 0.404156 19.0909 0.403777 20.7145 0.409076C20.725 0.409076 20.7352 0.413263 20.7426 0.420715C20.7501 0.428168 20.7542 0.438276 20.7542 0.448815V5.11636C20.7542 5.13353 20.7474 5.14999 20.7353 5.16213C20.7231 5.17426 20.7067 5.18108 20.6895 5.18108C19.8191 5.1826 18.9585 5.17881 18.1077 5.16973Z" fill="#18181B"/>
+                  <path d="M245.978 5.17768C244.639 5.17465 243.298 5.17276 241.954 5.172C241.939 5.172 241.925 5.16602 241.914 5.15537C241.903 5.14472 241.897 5.13029 241.897 5.11523V0.468117C241.897 0.45306 241.903 0.438621 241.914 0.427975C241.925 0.417328 241.939 0.411348 241.954 0.411348C243.763 0.403778 245.57 0.399994 247.374 0.399994C251.139 0.399994 254.544 2.19276 255.409 6.10982C256.105 9.26505 255.122 12.7416 254.678 15.7696C254.559 16.5856 254.492 17.5957 254.477 18.8C254.464 19.8748 254.744 20.8622 255.316 21.7622C256.697 23.9353 259.599 23.5708 261.766 23.572C261.781 23.572 261.795 23.5778 261.806 23.5883C261.816 23.5987 261.822 23.6129 261.822 23.6276L261.825 28.3451C261.826 28.3616 261.819 28.3774 261.808 28.3893C261.797 28.4012 261.781 28.4081 261.765 28.4087C259.588 28.4587 256.813 28.042 255.362 30.1333C254.828 30.9016 254.547 31.7815 254.518 32.7731C254.444 35.2902 254.834 37.2045 255.352 40.2133C255.657 41.981 255.783 44.1689 255.377 45.9844C254.577 49.5529 251.49 51.3718 248.02 51.5455C246.749 51.6091 244.727 51.617 241.956 51.5693C241.94 51.569 241.924 51.5623 241.913 51.5507C241.901 51.539 241.895 51.5233 241.895 51.5069L241.898 46.8223C241.898 46.8155 241.9 46.8088 241.902 46.8025C241.905 46.7962 241.909 46.7905 241.914 46.7858C241.919 46.781 241.924 46.7773 241.931 46.7748C241.937 46.7723 241.944 46.7711 241.951 46.7712C244.196 46.8234 245.938 46.8113 247.176 46.7349C247.448 46.7182 247.768 46.6429 248.134 46.5089C250.438 45.6665 250.381 43.4945 250.265 41.4554C250.178 39.9192 249.811 38.2093 249.555 36.622C248.918 32.6471 249.073 27.9409 253.436 26.1572C253.546 26.113 253.599 26.0778 253.564 25.9506C253.56 25.9333 253.551 25.9172 253.539 25.9037C253.528 25.8901 253.513 25.8794 253.496 25.8723C247.857 23.4925 249.253 17.0299 250.028 12.3817C250.248 11.0658 250.341 9.9213 250.297 8.69622C250.199 5.96222 248.445 5.18449 245.978 5.17768Z" fill="#18181B"/>
+                  <path d="M106.049 22.4831V7.90032C106.049 7.87773 106.058 7.85608 106.074 7.84011C106.09 7.82414 106.112 7.81516 106.135 7.81516H111.443C111.458 7.81516 111.472 7.82115 111.483 7.83179C111.493 7.84244 111.499 7.85688 111.499 7.87193V44.7718C111.499 44.7869 111.493 44.8013 111.483 44.812C111.472 44.8226 111.458 44.8286 111.443 44.8286H106.906C106.883 44.8285 106.862 44.8202 106.845 44.8054C106.828 44.7906 106.817 44.7701 106.815 44.748L106.367 41.159C106.363 41.1208 106.343 41.0861 106.313 41.0621C106.283 41.0381 106.244 41.0269 106.206 41.0307C106.143 41.0364 106.026 41.1329 105.989 41.1988C103.96 44.9444 100 45.9787 96.049 45.2123C87.9084 43.633 86.1735 34.4398 87.6598 27.6298C89.0267 21.3648 94.4561 17.7157 100.802 18.9396C103.065 19.3764 104.798 20.5621 106.002 22.4968C106.034 22.5482 106.049 22.5437 106.049 22.4831ZM93.1323 28.8004C91.7914 33.7359 93.3446 40.4324 99.764 40.2076C102.912 40.0974 105.309 37.9675 105.963 34.894C106.359 33.0342 106.359 31.1416 105.964 29.216C104.55 22.3276 94.9557 22.096 93.1323 28.8004Z" fill="#18181B"/>
+                  <path d="M175.602 22.4684C177.833 19.4006 181.236 18.3197 184.928 18.8306C189.946 19.5255 193.136 23.2915 194.029 28.1146C194.666 31.5583 194.55 35.4708 193.206 38.7668C191.244 43.5706 186.725 46.0173 181.583 45.3032C178.84 44.9209 176.821 43.5149 175.525 41.0852C175.515 41.0663 175.501 41.0499 175.484 41.0371C175.467 41.0244 175.447 41.0157 175.426 41.0117C175.405 41.0076 175.383 41.0084 175.363 41.0138C175.342 41.0193 175.323 41.0293 175.306 41.0432C175.131 41.192 174.829 44.3131 174.772 44.7695C174.77 44.7859 174.762 44.8009 174.75 44.8118C174.738 44.8227 174.722 44.8287 174.706 44.8286H170.198C170.168 44.8286 170.139 44.8166 170.118 44.7953C170.097 44.774 170.085 44.7452 170.085 44.715V7.87193C170.085 7.85688 170.091 7.84244 170.101 7.83179C170.112 7.82115 170.126 7.81516 170.141 7.81516H175.486C175.503 7.81516 175.52 7.82198 175.532 7.83412C175.545 7.84626 175.552 7.86272 175.552 7.87988L175.569 22.4582C175.569 22.4953 175.58 22.4987 175.602 22.4684ZM175.611 29.3227C174.785 33.3612 175.594 38.9768 180.527 40.035C183.994 40.7798 187.479 39.0222 188.437 35.5287C189.6 31.2858 188.828 25.1399 183.521 24.0579C179.734 23.2859 176.391 25.5044 175.611 29.3227Z" fill="#18181B"/>
+                  <path d="M204.637 40.06H213.084C213.1 40.06 213.115 40.0663 213.126 40.0776C213.138 40.0889 213.144 40.1042 213.144 40.1202V44.7389C213.144 44.7504 213.142 44.7617 213.137 44.7723C213.133 44.7829 213.126 44.7926 213.118 44.8007C213.11 44.8088 213.101 44.8153 213.09 44.8197C213.079 44.8241 213.068 44.8263 213.056 44.8263L199.179 44.8297C199.163 44.8297 199.148 44.8234 199.136 44.8121C199.125 44.8008 199.119 44.7855 199.119 44.7695C199.088 34.7699 199.073 24.7698 199.073 14.7694C199.073 14.3731 199.111 13.9156 198.987 13.5591C198.611 12.4793 197.765 12.5599 196.651 12.5599C194.879 12.5584 193.106 12.5539 191.331 12.5463C191.324 12.5463 191.317 12.5449 191.311 12.5422C191.304 12.5396 191.298 12.5356 191.293 12.5307C191.288 12.5257 191.284 12.5198 191.282 12.5134C191.279 12.5069 191.278 12.4999 191.278 12.4929L191.267 7.88329C191.267 7.86643 191.274 7.85025 191.286 7.83833C191.298 7.82641 191.314 7.81971 191.331 7.81971C193.746 7.81441 196.153 7.81555 198.552 7.82311C202.368 7.83447 204.433 9.92925 204.557 13.7509C204.557 13.7555 204.556 14.3637 204.554 15.5755C204.54 23.4724 204.538 31.369 204.548 39.2652C204.549 39.5725 204.557 39.8185 204.574 40.0032C204.576 40.0189 204.583 40.0333 204.595 40.0438C204.606 40.0543 204.621 40.06 204.637 40.06Z" fill="#18181B"/>
+                  <path d="M44.9446 45.0897C35.1962 47.0641 28.9982 40.8877 27.6165 31.7161C26.1087 21.7134 29.0391 7.79814 42.1266 8.24434C43.623 8.29505 45.0331 8.52137 46.357 8.9233C51.3368 10.4345 54.232 14.8716 54.6929 19.8888C54.6936 19.8948 54.6929 19.9009 54.6911 19.9067C54.6892 19.9125 54.6861 19.9178 54.682 19.9223C54.678 19.9268 54.673 19.9304 54.6674 19.9328C54.6619 19.9353 54.6559 19.9365 54.6498 19.9365L48.7481 19.9376C48.7254 19.9377 48.7034 19.9297 48.6861 19.9151C48.6688 19.9005 48.6574 19.8803 48.6539 19.8582C48.1327 16.6076 45.9971 13.8849 42.6103 13.4637C33.6271 12.3499 32.4395 23.2529 32.9334 29.359C33.3774 34.8474 35.9127 41.1624 42.7522 40.1713C44.4371 39.9271 45.7178 39.3924 46.835 38.081C47.7932 36.957 48.3939 35.6449 48.6368 34.1446C48.6433 34.1069 48.6627 34.0726 48.6918 34.0479C48.7209 34.0232 48.7577 34.0096 48.7958 34.0095L54.635 34.0152C54.6417 34.0151 54.6482 34.0165 54.6543 34.0193C54.6603 34.022 54.6657 34.026 54.6701 34.0311C54.6745 34.0361 54.6778 34.0421 54.6798 34.0485C54.6818 34.055 54.6824 34.0618 54.6816 34.0686C53.9561 39.5616 50.5556 43.9521 44.9446 45.0897Z" fill="#18181B"/>
+                  <path d="M61.4541 41.4088C58.6213 38.2343 57.8073 33.9403 58.3295 29.7836C59.2912 22.1266 65.806 17.6532 73.337 18.8999C81.3448 20.2249 84.6067 27.7842 83.3101 35.1778C82.4415 40.1349 78.8379 44.1258 73.8535 45.1306C69.3325 46.0423 64.5911 44.924 61.4541 41.4088ZM65.9071 38.2786C68.0268 40.2144 70.9731 40.7287 73.6469 39.7057C76.6398 38.5601 77.9511 35.8125 78.0896 32.7095C78.1646 31.0121 78.0045 29.367 77.3074 27.8546C75.7417 24.4598 71.8042 23.111 68.3186 24.3633C64.4844 25.7406 63.407 29.6326 63.7691 33.3419C63.9576 35.2698 64.4799 36.9763 65.9071 38.2786Z" fill="#18181B"/>
+                  <path d="M125.2 45.1851C120.112 44.245 116.488 40.2575 115.607 35.2108C114.914 31.2472 115.476 27.1303 117.702 23.8081C120.507 19.622 125.618 18.0779 130.452 18.9249C135.869 19.8752 139.586 24.6211 139.859 30.0198C139.914 31.1211 139.913 32.2054 139.855 33.2727C139.854 33.292 139.846 33.3102 139.832 33.3235C139.818 33.3368 139.799 33.3442 139.779 33.3442L120.772 33.3578C120.766 33.3578 120.761 33.359 120.755 33.3612C120.75 33.3634 120.745 33.3666 120.741 33.3706C120.737 33.3747 120.734 33.3794 120.732 33.3846C120.73 33.3899 120.73 33.3954 120.73 33.401C120.923 38.0878 124.615 41.1897 129.24 40.4244C131.367 40.0736 132.924 38.8565 133.698 36.8219C133.704 36.8072 133.714 36.7947 133.727 36.786C133.74 36.7772 133.755 36.7727 133.771 36.7731L139.205 36.7946C139.209 36.7947 139.212 36.7956 139.216 36.7973C139.219 36.799 139.222 36.8015 139.225 36.8046C139.227 36.8077 139.228 36.8113 139.229 36.815C139.23 36.8188 139.23 36.8227 139.229 36.8264C138.522 39.4976 137.068 41.6673 134.868 43.3356C132.191 45.3645 128.411 45.7778 125.2 45.1851ZM134.42 29.1342C134.091 24.3656 128.964 22.3049 124.944 24.0693C122.806 25.0079 121.469 26.6943 120.932 29.1285C120.93 29.1358 120.931 29.1433 120.932 29.1505C120.934 29.1577 120.937 29.1645 120.942 29.1702C120.947 29.176 120.953 29.1806 120.959 29.1838C120.966 29.187 120.973 29.1887 120.981 29.1887H134.37C134.377 29.1887 134.384 29.1873 134.391 29.1845C134.397 29.1817 134.403 29.1776 134.407 29.1725C134.412 29.1674 134.416 29.1613 134.418 29.1547C134.42 29.1481 134.421 29.1411 134.42 29.1342Z" fill="#18181B"/>
+                  <path d="M160.594 41.0489C160.45 40.9982 160.34 41.0292 160.266 41.142C159.058 42.9995 157.35 44.7128 155.117 45.1578C150.38 46.1047 144.599 44.7514 143.373 39.381C142.736 36.5914 143.654 33.3612 146.082 31.6968C148.176 30.2594 150.64 29.7587 153.147 29.7303C155.5 29.7045 157.854 29.6951 160.208 29.7019C160.224 29.702 160.238 29.6962 160.25 29.6857C160.262 29.6752 160.269 29.6608 160.271 29.6451C160.483 27.0042 159.59 24.2203 156.667 23.5833C153.598 22.9146 150.036 23.9012 149.257 27.3335C149.253 27.3542 149.241 27.3726 149.224 27.3858C149.208 27.399 149.188 27.4062 149.167 27.4062L143.888 27.3982C143.873 27.3981 143.858 27.3949 143.845 27.3888C143.831 27.3827 143.819 27.3738 143.809 27.3626C143.799 27.3515 143.792 27.3384 143.787 27.3242C143.783 27.31 143.781 27.295 143.783 27.2801C144.58 20.2078 151.477 18.0711 157.539 18.8874C158.718 19.0464 159.8 19.3457 160.786 19.7855C164.441 21.4136 165.777 25.3591 165.776 29.0763C165.774 34.2885 165.772 39.5112 165.769 44.7446C165.769 44.7668 165.76 44.7882 165.745 44.804C165.729 44.8197 165.707 44.8286 165.685 44.8286H161.208C161.187 44.8285 161.166 44.8205 161.149 44.8061C161.133 44.7917 161.123 44.7718 161.12 44.7502L160.661 41.1318C160.659 41.1131 160.651 41.0954 160.639 41.0808C160.628 41.0661 160.612 41.0551 160.594 41.0489ZM149.894 39.6149C150.538 40.2288 151.306 40.5978 152.197 40.7219C154.772 41.0807 157.265 40.5221 158.808 38.2933C159.707 36.9952 160.177 35.4727 160.218 33.7257C160.218 33.7183 160.217 33.7109 160.214 33.7041C160.212 33.6972 160.208 33.6909 160.202 33.6856C160.197 33.6803 160.191 33.6761 160.184 33.6733C160.177 33.6704 160.17 33.6689 160.163 33.6689C156.385 33.6689 154.146 33.6738 153.445 33.6837C152.277 33.7007 150.747 34.0232 149.908 34.844C148.682 36.0441 148.622 38.4023 149.894 39.6149Z" fill="#18181B"/>
+                  <path d="M229.5 45.1113C222.496 46.6213 215.84 42.8462 214.333 35.716C212.655 27.7786 216.514 19.4381 225.37 18.7534C228.154 18.5388 230.951 19.0316 233.296 20.6177C236.435 22.7409 238.285 26.1993 238.499 29.9914C238.558 31.0405 238.557 32.135 238.495 33.2749C238.493 33.3019 238.481 33.3271 238.461 33.3452C238.441 33.3632 238.415 33.3727 238.388 33.3715C237.074 33.3045 235.422 33.3567 234.445 33.3578C229.432 33.3639 224.42 33.3635 219.408 33.3567C219.4 33.3567 219.393 33.3582 219.386 33.3611C219.38 33.3641 219.374 33.3684 219.368 33.3738C219.363 33.3792 219.359 33.3856 219.357 33.3926C219.354 33.3996 219.353 33.4071 219.353 33.4146C219.62 38.2536 223.43 41.3373 228.249 40.3506C229.893 40.0138 231.118 39.1108 231.924 37.6416C232.073 37.3691 232.221 37.0932 232.367 36.8139C232.375 36.7989 232.387 36.7863 232.401 36.7775C232.415 36.7687 232.432 36.764 232.449 36.764L237.808 36.781C237.815 36.7809 237.822 36.7825 237.829 36.7858C237.836 36.789 237.841 36.7937 237.846 36.7995C237.85 36.8053 237.854 36.8121 237.855 36.8194C237.856 36.8266 237.856 36.8341 237.854 36.8412C236.799 40.9229 233.676 44.2109 229.5 45.1113ZM233.058 29.1342C232.867 26.4979 231.069 24.3406 228.508 23.6991C224.41 22.6739 220.439 24.9015 219.572 29.1308C219.571 29.1378 219.571 29.145 219.573 29.1519C219.574 29.1589 219.577 29.1653 219.582 29.1709C219.586 29.1765 219.592 29.1809 219.598 29.184C219.605 29.1871 219.612 29.1887 219.619 29.1887H233.007C233.014 29.1887 233.021 29.1873 233.028 29.1845C233.034 29.1817 233.04 29.1777 233.045 29.1726C233.049 29.1675 233.053 29.1614 233.056 29.1548C233.058 29.1482 233.059 29.1412 233.058 29.1342Z" fill="#18181B"/>
+                </svg>
+                  <nav class="header__navigation">
                     <ul>
-                      <li>La puntuacion de ambos equipos tendra un rango de 0-9.</li>
-                      <li>El arbitro puede decir la puntuacion de diversas maneras, por ejemplo:</li>
+                      <a href="/diagramas.html">Diagramas VV</a>
+                      <a href="/funciones.html">Funciones</a>
+                      <a href="/dom.html">Manipulación del DOM</a>
                     </ul>
-
-                    <pre><code><span>obtenerMarcador("El marcador es cuatro cero") // [4,0]</span></code></pre>
-                    <pre><code><span>obtenerMarcador("nuevo marcador: dos tres") // [2 , 3]</span></code></pre>
-                    <pre><code><span>obtenerMarcador("dos dos") // [2, 2]</span></code></pre>
-                    <pre><code><span>obtenerMarcador("Artesanal acaba de recibir otro gol, dos cero") // [2, 0]</span></code></pre>
-
-                  <p>El valor de retorno de la funcion siempre debe ser un array de dos numeros. si no hay 
-                    numeros en el texto de entrada asume que el marcador es 0 a 0.</p>
-
-                  <strong><h3>Respuesta</h3></strong>
-                    <pre><code><span>function obtenerMarcador(texto) {</span></code></pre>
-                    <pre><code><span>   // tu codigo aqui</span></code></pre>
-                    <pre><code><span>}</span></code></pre>
-
-                  <strong><h2>Clase `Barco `</h2></strong>
-
-                  <strong><h3>Descripcion</h3></strong>
-
-                  <p>Eres el astuto lider de una agil tripulacion pirata, siempre en busca de valiosos tesoros,
-                    Como todo pirata versado en tecnologia, planeas utilizar la Programacion Orientada a 
-                    Objetos (OOP) para crear un sistema que ayude a indentificar barcos cargados con tesoros.</p>
-                  <p>En estos tiempos modernos, la gente pesa bastante y esto suma al peso del barco.
-                    ¿Como puedes asegurarte de que el barco que aliges este lleno de oro y no solo 
-                    cargado con una tripulacion pesada?
-                  </p>
-                  
-                  <strong><h3>Requerimiento</h3></strong>
-                  <p> Tu tarea es crear una clase llamada `Barco`. Esta clase debe tener un constructor con
-                    dos parametros: </p>
+                  </nav>
+                  <div class="header_name">
                     <ul>
-                      <li><strong>calado: </strong> una estimacion del peso total del barco basado en cuan bajo se encuentra
-                      en el agua.</li>
-                      <li><strong>tripulacion: </strong> El numero de miembros de la tripulacion a bordo del barco.</li>
+                      <a>Fernanda Moscoso</a>
                     </ul>
-                  <p>Adicionalmente, la clase debe tener un metodo llamado `valeLaPena`. Este metodo debe retornar 
-                    `true` o `false` segun si el barco vale la pena ser saqueado o no.</p>
-                    <ul>
-                      <li>Cada miembro de la tripulacion suma 1.5 unidades al calado del barco.</li>
-                      <li>Si el caladosigue siendo mas de 20 unidades despues de contabilizar el peso de la 
-                        tripuluacion, ¡¡entonces el barco vale la pena ser saqueado!!
-                      </li>
-                    </ul>
+                  </div>
+                </header>
+        </div>
+              <main>
+                <div class="section-moduls">
+                  <div class="container-1 justify">
+                    <article class="article">
+                          <h1 class="title-moduls">Funciones</h1>
 
-                    <pre><code><span>cosnt perlaNegra = new Barco (22,5);</span></code></pre>
-                    <pre><code><span>perlaNegra.valeLaPena(); // Deberia retornar true </span></code></pre>
+                          <h2>Instrucciones</h2>
+                          <p class="header-p ">Completa las funciones del archivo `funciones.js` siguiendo 
+                            las indicaciones a fin de que los test de la pagina <a href="test.html">test.html</a>
+                            pasen exitosamente. Deja una copia de tu codigo en esta pagina.</p>
+                          
+                          <h2>Funcion `interactuarCadenas`</h2>
 
-                    <pre><code><span>const titanic = new Barco (15, 10);</span></code></pre>
-                    <pre><code><span>titanic.valeLaPena(); // Deberia retornar false</span></code></pre>
+                          <h3 class="title-moduls1">Descripcion</h3>
+                          <p class="header-p ">Dadas dos cadenas de texto compuestas por los simbolor `+` y`-`-, tu tarea es
+                            devolver una nueva cadena que muestre como interactuan las dos cadenas originales
+                            dee la siguiente manera</p>
+                          <ul class="contnt-ul">
+                            <li class="contnt-li marker">Dado un simbolo positivo (`+`) interactuan con otro positivo, permanece positivo.</li>
+                            <li class="contnt-li marker">Cuando un simbolo negativo (`-`) interactuan con otro negativo, permanece negativo</li>
+                            <li class="contnt-li marker">Pero cuando un simbolo negativo interactua con un simbolo positivo, se neutralizan 
+                              y se muestran como el numero `0`.</li>
+                          </ul>
 
-                    <strong><h3>Respuesta</h3></strong>
-                      <pre><code><span>class Barco {</span></code></pre>
-                      <pre><code><span>   // tu codigo aqui</span></code></pre>
-                      <pre><code><span>}</span></code></pre>
+                          <h3 >Requerimiento</h3>
+                          <p class="header-p ">Escribe una funcion `interactuarCadenas` que toma dos cadenas de igual longitud como
+                            argumento y devuelve una nueva cadena de acuerdo con las reglas de interaccion mencionadas.</p>
 
-                      
+                          <h3>Ejemplo</h3>
+                            <div class="content-pre">                       
+                              <pre><code><span>cosnt resultado = interactuarCadenas ("+-+", "+--");</span></code></pre>
+                              <pre><code><span>console.log(resultado0; // Devuelve "+-0"</span></code></pre>
+                            </div>
+                          <h3>Respuesta</h3>
+                            <div class="content-pre">
+                              <pre><code><span>function interactuarCadenas(cadena1, cadena2) {</span></code></pre>
+                              <pre><code><span> // Tucodigo aqui</span></code></pre>
+                              <pre><code><span> } </span></code></pre>
+                            </div>
+                          <h2>Funcion `generarApodo`</h2>
+
+                          <h3>Descripcion</h3>
+                          <p class="header-p ">Tu objeto es escribir una funcion llamada `generarApodo` que tome un string ` nombre `
+                            como argumento y devulva los primeros 3 o 4 caracteres como apodo.</p>
+                          
+                          <h3>Requerimiento</h3>
+
+                          <p class="header-p "> Si la tercera letra es una consonante, devuelve las primeras 3 letras.</p>
+                          <div class="content-pre">
+                              <pre><code><span>generarApodo("Roberto") // "Rob"</span></code></pre>
+                              <pre><code><span>generarApodo("Kimberly") // "Kim"</span></code></pre>
+                              <pre><code><span>generarApodo("Samuel") // "Sam"</span></code></pre>
+                          </div>
+
+                          <p class="header-p ">Si la tercera letra es una vocal, devuelve las primeras 4 letras.</p>
+                            <div class="content-pre">
+                              <pre><code><span>generarApodo("Jeannie") // "Jean"</span></code></pre>
+                              <pre><code><span>generarApodo("Douglas") // "Doug"</span></code></pre>
+                              <pre><code><span>generarApodo("Gregory") // "Greg"</span></code></pre>
+                            </div>
+                          <p class="header-p ">Si el string tiene menos de 4 caracteres, lanza un Error con el mensaje "Nombre muy corto"</p>
+
+                          <p class="header-p ">Ten cuenta que:</p>
+                            <ul class="contnt-ul">
+                              <li class="contnt-li marker">Las vocales son solo "aeiou", asi que no cueentes la letra "y".</li>
+                              <li class="contnt-li marker">El argumento de entrada siempre sera un string</li>
+                            </ul>
+
+                          <h3>Respuesta</h3>
+                             <div class="content-pre">
+                              <pre><code><span>function generarApodo (nombre) {</span></code></pre>
+                              <pre><code><span>   // tu codigo aqui</span></code></pre>
+                              <pre><code><span>}</span></code></pre>
+                             </div>
+                          <h2>Funcion `obtenerMarcador `</h2>
+
+                          <h3>Descripcion</h3>
+
+                          <p class="header-p ">TRabajas en un estadio de futbol de ligas menores y has decidido implementar un sistema
+                            para autorizar el marcador en juego. Tienes un modulo de reconocimiento de voz que
+                            convierte lo que el arbitro dice en una cadena de texto. Tu reto actual es convertir ese 
+                            texto en un par de numeros que prepresenten el marcador actual.</p>
+                          
+                          <h3> Requerimiento</h3>
+                          <p class="header-p ">Escribe una funcion `obtenerMarcador` que recibe un texto y retorna un arreglo con dos
+                            numeros que representa el marcador del juego.</p>
+                            <ul class="contnt-ul">
+                              <li class="contnt-li marker">La puntuacion de ambos equipos tendra un rango de 0-9.</li>
+                              <li class="contnt-li marker">El arbitro puede decir la puntuacion de diversas maneras, por ejemplo:</li>
+                            </ul>
+                            <div class="content-pre">
+                              <pre><code><span>obtenerMarcador("El marcador es cuatro cero") // [4,0]</span></code></pre>
+                              <pre><code><span>obtenerMarcador("nuevo marcador: dos tres") // [2 , 3]</span></code></pre>
+                              <pre><code><span>obtenerMarcador("dos dos") // [2, 2]</span></code></pre>
+                              <pre><code><span>obtenerMarcador("Artesanal acaba de recibir otro gol, dos cero") // [2, 0]</span></code></pre>
+                            </div>
+                          <p class="header-p ">El valor de retorno de la funcion siempre debe ser un array de dos numeros. si no hay 
+                            numeros en el texto de entrada asume que el marcador es 0 a 0.</p>
+
+                          <h3>Respuesta</h3>
+
+                              <div class="content-pre">
+                                <pre><code><span>function obtenerMarcador(texto) {</span></code></pre>
+                                <pre><code><span>   // tu codigo aqui</span></code></pre>
+                                <pre><code><span>}</span></code></pre>
+                              </div>
+
+                          <h2>Clase `Barco `</h2>
+
+                          <h3 class="title-moduls1">Descripcion</h3>
+
+                          <p class="header-p ">Eres el astuto lider de una agil tripulacion pirata, siempre en busca de valiosos tesoros,
+                            Como todo pirata versado en tecnologia, planeas utilizar la Programacion Orientada a 
+                            Objetos (OOP) para crear un sistema que ayude a indentificar barcos cargados con tesoros.</p>
+                          <p class="header-p ">En estos tiempos modernos, la gente pesa bastante y esto suma al peso del barco.
+                            ¿Como puedes asegurarte de que el barco que aliges este lleno de oro y no solo 
+                            cargado con una tripulacion pesada?
+                          </p>
+                          
+                          <h3 class="title-moduls1">Requerimiento</h3>
+                          <p class="header-p "> Tu tarea es crear una clase llamada `Barco`. Esta clase debe tener un constructor con
+                            dos parametros: </p>
+                            <ul class="contnt-ul">
+                              <li class="contnt-li marker"><strong>calado:</strong>  una estimacion del peso total del barco basado en cuan bajo se encuentra
+                              en el agua.</li>
+                              <li class="contnt-li marker"><strong>tripulacion:</strong>  El numero de miembros de la tripulacion a bordo del barco.</li>
+                            </ul>
+                          <p class="header-p ">Adicionalmente, la clase debe tener un metodo llamado `valeLaPena`. Este metodo debe retornar 
+                            `true` o `false` segun si el barco vale la pena ser saqueado o no.</p>
+                            <ul class="contnt-ul">
+                              <li class="contnt-li marker">Cada miembro de la tripulacion suma 1.5 unidades al calado del barco.</li>
+                              <li class="contnt-li marker">Si el caladosigue siendo mas de 20 unidades despues de contabilizar el peso de la 
+                                tripuluacion, ¡¡entonces el barco vale la pena ser saqueado!!
+                              </li>
+                            </ul>
+                            <div class="content-pre">
+                                <pre><code><span>cosnt perlaNegra = new Barco (22,5);</span></code></pre>
+                                <pre><code><span>perlaNegra.valeLaPena(); // Deberia retornar true </span></code></pre>
+
+                                <pre><code><span>const titanic = new Barco (15, 10);</span></code></pre>
+                                <pre><code><span>titanic.valeLaPena(); // Deberia retornar false</span></code></pre>
+                              </div>
+
+                            <h3 class="title-moduls1">Respuesta</h3>
+                            <div class="content-pre">
+                                <pre><code><span>class Barco {</span></code></pre>
+                                <pre><code><span>   // tu codigo aqui</span></code></pre>
+                                <pre><code><span>}</span></code></pre>
+                            </div> 
+
+                              
             </article>
           </div>
         </div>
