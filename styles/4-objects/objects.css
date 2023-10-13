@@ -23,6 +23,7 @@
     padding-inline: var(--padding);
     max-width: var(--width-7xl);
     margin-inline: auto;
+    
   }
   
   @media (min-width: 40rem) {

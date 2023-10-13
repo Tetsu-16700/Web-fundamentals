@@ -14,156 +14,162 @@
           <h1 class="header__logo"><a href="/index.html">{Codeable}</a></h1>
           <nav class="header__navigation navigation">
             <ul>
-              <li><a href="/diagramas.html">Diagramas VV</a></li>
-              <li><a href="/funciones.html">Funciones</a></li>
-              <li><a href="/dom.html">Manipulación del DOM</a></li>
+              <a href="/diagramas.html">Diagramas VV</a>
+              <a href="/funciones.html">Funciones</a>
+              <a href="/dom.html">Manipulación del DOM</a>
             </ul>
           </nav>
           <div class="header__actions">
-            <li>Fernanda Moscoso</li>
+            <ul>
+               <a>Fernanda Moscoso</a>
+            </ul>
           </div>
+        </header>
       <main>
-        <strong><h1>Funciones</h1></strong>
+        <div class="section">
+          <div class="container justify">
+            <article class="article">
+                  <strong><h1>Funciones</h1></strong>
 
-        <strong><h2>Instrucciones</h2></strong>
-        <p>Completa las funciones del archivo `funciones.js` siguiendo 
-          las indicaciones a fin de que los test de la pagina <a href="test.html">test.html</a>
-          pasen exitosamente. Deja una copia de tu codigo en esta pagina.</p>
-        
-        <strong><h2>Funcion `interactuarCadenas`</h2></strong>
+                  <strong><h2>Instrucciones</h2></strong>
+                  <p>Completa las funciones del archivo `funciones.js` siguiendo 
+                    las indicaciones a fin de que los test de la pagina <a href="test.html">test.html</a>
+                    pasen exitosamente. Deja una copia de tu codigo en esta pagina.</p>
+                  
+                  <strong><h2>Funcion `interactuarCadenas`</h2></strong>
 
-        <strong><h3>Descripcion</h3></strong>
-        <p>Dadas dos cadenas de texto compuestas por los simbolor `+` y`-`-, tu tarea es
-          devolver una nueva cadena que muestre como interactuan las dos cadenas originales
-          dee la siguiente manera</p>
-        <ul>
-          <li>Dado un simbolo positivo (`+`) interactuan con otro positivo, permanece positivo.</li>
-          <li>Cuando un simbolo negativo (`-`) interactuan con otro negativo, permanece negativo</li>
-          <li>Pero cuando un simbolo negativo interactua con un simbolo positivo, se neutralizan 
-            y se muestran como el numero `0`.</li>
-        </ul>
+                  <strong><h3>Descripcion</h3></strong>
+                  <p>Dadas dos cadenas de texto compuestas por los simbolor `+` y`-`-, tu tarea es
+                    devolver una nueva cadena que muestre como interactuan las dos cadenas originales
+                    dee la siguiente manera</p>
+                  <ul>
+                    <li>Dado un simbolo positivo (`+`) interactuan con otro positivo, permanece positivo.</li>
+                    <li>Cuando un simbolo negativo (`-`) interactuan con otro negativo, permanece negativo</li>
+                    <li>Pero cuando un simbolo negativo interactua con un simbolo positivo, se neutralizan 
+                      y se muestran como el numero `0`.</li>
+                  </ul>
 
-        <strong><h3>Requerimiento</h3></strong>
-        <p>Escribe una funcion `interactuarCadenas` que toma dos cadenas de igual longitud como
-          argumento y devuelve una nueva cadena de acuerdo con las reglas de interaccion mencionadas.</p>
+                  <strong><h3>Requerimiento</h3></strong>
+                  <p>Escribe una funcion `interactuarCadenas` que toma dos cadenas de igual longitud como
+                    argumento y devuelve una nueva cadena de acuerdo con las reglas de interaccion mencionadas.</p>
 
-        <strong><h3>Ejemplo</h3></strong>
-          <pre><code><span>cosnt resultado = interactuarCadenas ("+-+", "+--");</span></code></pre>
-          <pre><code><span>console.log(resultado0; // Devuelve "+-0"</span></code></pre>
+                  <strong><h3>Ejemplo</h3></strong>
+                    <pre><code><span>cosnt resultado = interactuarCadenas ("+-+", "+--");</span></code></pre>
+                    <pre><code><span>console.log(resultado0; // Devuelve "+-0"</span></code></pre>
 
-        <strong><h3>Respuesta</h3></strong>
-          <pre><code><span>function interactuarCadenas(cadena1, cadena2) {</span></code></pre>
-          <pre><code><span> // Tucodigo aqui</span></code></pre>
-          <pre><code><span> } </span></code></pre>
+                  <strong><h3>Respuesta</h3></strong>
+                    <pre><code><span>function interactuarCadenas(cadena1, cadena2) {</span></code></pre>
+                    <pre><code><span> // Tucodigo aqui</span></code></pre>
+                    <pre><code><span> } </span></code></pre>
 
-        <strong><h2>Funcion `generarApodo`</h2></strong>
+                  <strong><h2>Funcion `generarApodo`</h2></strong>
 
-        <strong><h3>Descripcion</h3></strong>
-        <p>Tu objeto es escribir una funcion llamada `generarApodo` que tome un string ` nombre `
-          como argumento y devulva los primeros 3 o 4 caracteres como apodo.</p>
-        
-        <strong><h3>Requerimiento</h3></strong>
+                  <strong><h3>Descripcion</h3></strong>
+                  <p>Tu objeto es escribir una funcion llamada `generarApodo` que tome un string ` nombre `
+                    como argumento y devulva los primeros 3 o 4 caracteres como apodo.</p>
+                  
+                  <strong><h3>Requerimiento</h3></strong>
 
-        <p> Si la tercera letra es una consonante, devuelve las primeras 3 letras.</p>
-          <pre><code><span>generarApodo("Roberto") // "Rob"</span></code></pre>
-          <pre><code><span>generarApodo("Kimberly") // "Kim"</span></code></pre>
-          <pre><code><span>generarApodo("Samuel") // "Sam"</span></code></pre>
+                  <p> Si la tercera letra es una consonante, devuelve las primeras 3 letras.</p>
+                    <pre><code><span>generarApodo("Roberto") // "Rob"</span></code></pre>
+                    <pre><code><span>generarApodo("Kimberly") // "Kim"</span></code></pre>
+                    <pre><code><span>generarApodo("Samuel") // "Sam"</span></code></pre>
 
-        <p>Si la tercera letra es una vocal, devuelve las primeras 4 letras.</p>
-          <pre><code><span>generarApodo("Jeannie") // "Jean"</span></code></pre>
-          <pre><code><span>generarApodo("Douglas") // "Doug"</span></code></pre>
-          <pre><code><span>generarApodo("Gregory") // "Greg"</span></code></pre>
+                  <p>Si la tercera letra es una vocal, devuelve las primeras 4 letras.</p>
+                    <pre><code><span>generarApodo("Jeannie") // "Jean"</span></code></pre>
+                    <pre><code><span>generarApodo("Douglas") // "Doug"</span></code></pre>
+                    <pre><code><span>generarApodo("Gregory") // "Greg"</span></code></pre>
 
-        <p>Si el string tiene menos de 4 caracteres, lanza un Error con el mensaje "Nombre muy corto"</p>
+                  <p>Si el string tiene menos de 4 caracteres, lanza un Error con el mensaje "Nombre muy corto"</p>
 
-        <p>Ten cuenta que:</p>
-        <ul>
-          <li>Las vocales son solo "aeiou", asi que no cueentes la letra "y".</li>
-          <li>El argumento de entrada siempre sera un string</li>
-        </ul>
+                  <p>Ten cuenta que:</p>
+                  <ul>
+                    <li>Las vocales son solo "aeiou", asi que no cueentes la letra "y".</li>
+                    <li>El argumento de entrada siempre sera un string</li>
+                  </ul>
 
-        <strong><h3>Respuesta</h3></strong>
-          <pre><code><span>function generarApodo (nombre) {</span></code></pre>
-          <pre><code><span>   // tu codigo aqui</span></code></pre>
-          <pre><code><span>}</span></code></pre>
+                  <strong><h3>Respuesta</h3></strong>
+                    <pre><code><span>function generarApodo (nombre) {</span></code></pre>
+                    <pre><code><span>   // tu codigo aqui</span></code></pre>
+                    <pre><code><span>}</span></code></pre>
 
-        <strong><h2>Funcion `obtenerMarcador `</h2></strong>
+                  <strong><h2>Funcion `obtenerMarcador `</h2></strong>
 
-        <strong><h3>Descripcion</h3></strong>
+                  <strong><h3>Descripcion</h3></strong>
 
-        <p>TRabajas en un estadio de futbol de ligas menores y has decidido implementar un sistema
-          para autorizar el marcador en juego. Tienes un modulo de reconocimiento de voz que
-          convierte lo que el arbitro dice en una cadena de texto. Tu reto actual es convertir ese 
-          texto en un par de numeros que prepresenten el marcador actual.</p>
-        
-        <strong><h3> Requerimiento</h3></strong>
-        <p>Escribe una funcion `obtenerMarcador` que recibe un texto y retorna un arreglo con dos
-          numeros que representa el marcador del juego.</p>
-          <ul>
-            <li>La puntuacion de ambos equipos tendra un rango de 0-9.</li>
-            <li>El arbitro puede decir la puntuacion de diversas maneras, por ejemplo:</li>
-          </ul>
+                  <p>TRabajas en un estadio de futbol de ligas menores y has decidido implementar un sistema
+                    para autorizar el marcador en juego. Tienes un modulo de reconocimiento de voz que
+                    convierte lo que el arbitro dice en una cadena de texto. Tu reto actual es convertir ese 
+                    texto en un par de numeros que prepresenten el marcador actual.</p>
+                  
+                  <strong><h3> Requerimiento</h3></strong>
+                  <p>Escribe una funcion `obtenerMarcador` que recibe un texto y retorna un arreglo con dos
+                    numeros que representa el marcador del juego.</p>
+                    <ul>
+                      <li>La puntuacion de ambos equipos tendra un rango de 0-9.</li>
+                      <li>El arbitro puede decir la puntuacion de diversas maneras, por ejemplo:</li>
+                    </ul>
 
-          <pre><code><span>obtenerMarcador("El marcador es cuatro cero") // [4,0]</span></code></pre>
-          <pre><code><span>obtenerMarcador("nuevo marcador: dos tres") // [2 , 3]</span></code></pre>
-          <pre><code><span>obtenerMarcador("dos dos") // [2, 2]</span></code></pre>
-          <pre><code><span>obtenerMarcador("Artesanal acaba de recibir otro gol, dos cero") // [2, 0]</span></code></pre>
+                    <pre><code><span>obtenerMarcador("El marcador es cuatro cero") // [4,0]</span></code></pre>
+                    <pre><code><span>obtenerMarcador("nuevo marcador: dos tres") // [2 , 3]</span></code></pre>
+                    <pre><code><span>obtenerMarcador("dos dos") // [2, 2]</span></code></pre>
+                    <pre><code><span>obtenerMarcador("Artesanal acaba de recibir otro gol, dos cero") // [2, 0]</span></code></pre>
 
-        <p>El valor de retorno de la funcion siempre debe ser un array de dos numeros. si no hay 
-          numeros en el texto de entrada asume que el marcador es 0 a 0.</p>
+                  <p>El valor de retorno de la funcion siempre debe ser un array de dos numeros. si no hay 
+                    numeros en el texto de entrada asume que el marcador es 0 a 0.</p>
 
-        <strong><h3>Respuesta</h3></strong>
-          <pre><code><span>function obtenerMarcador(texto) {</span></code></pre>
-          <pre><code><span>   // tu codigo aqui</span></code></pre>
-          <pre><code><span>}</span></code></pre>
+                  <strong><h3>Respuesta</h3></strong>
+                    <pre><code><span>function obtenerMarcador(texto) {</span></code></pre>
+                    <pre><code><span>   // tu codigo aqui</span></code></pre>
+                    <pre><code><span>}</span></code></pre>
 
-        <strong><h2>Clase `Barco `</h2></strong>
+                  <strong><h2>Clase `Barco `</h2></strong>
 
-        <strong><h3>Descripcion</h3></strong>
+                  <strong><h3>Descripcion</h3></strong>
 
-        <p>Eres el astuto lider de una agil tripulacion pirata, siempre en busca de valiosos tesoros,
-          Como todo pirata versado en tecnologia, planeas utilizar la Programacion Orientada a 
-          Objetos (OOP) para crear un sistema que ayude a indentificar barcos cargados con tesoros.</p>
-        <p>En estos tiempos modernos, la gente pesa bastante y esto suma al peso del barco.
-          ¿Como puedes asegurarte de que el barco que aliges este lleno de oro y no solo 
-          cargado con una tripulacion pesada?
-        </p>
-        
-        <strong><h3>Requerimiento</h3></strong>
-        <p> Tu tarea es crear una clase llamada `Barco`. Esta clase debe tener un constructor con
-          dos parametros: </p>
-          <ul>
-            <li><strong>calado: </strong> una estimacion del peso total del barco basado en cuan bajo se encuentra
-            en el agua.</li>
-            <li><strong>tripulacion: </strong> El numero de miembros de la tripulacion a bordo del barco.</li>
-          </ul>
-        <p>Adicionalmente, la clase debe tener un metodo llamado `valeLaPena`. Este metodo debe retornar 
-          `true` o `false` segun si el barco vale la pena ser saqueado o no.</p>
-          <ul>
-            <li>Cada miembro de la tripulacion suma 1.5 unidades al calado del barco.</li>
-            <li>Si el caladosigue siendo mas de 20 unidades despues de contabilizar el peso de la 
-              tripuluacion, ¡¡entonces el barco vale la pena ser saqueado!!
-            </li>
-          </ul>
+                  <p>Eres el astuto lider de una agil tripulacion pirata, siempre en busca de valiosos tesoros,
+                    Como todo pirata versado en tecnologia, planeas utilizar la Programacion Orientada a 
+                    Objetos (OOP) para crear un sistema que ayude a indentificar barcos cargados con tesoros.</p>
+                  <p>En estos tiempos modernos, la gente pesa bastante y esto suma al peso del barco.
+                    ¿Como puedes asegurarte de que el barco que aliges este lleno de oro y no solo 
+                    cargado con una tripulacion pesada?
+                  </p>
+                  
+                  <strong><h3>Requerimiento</h3></strong>
+                  <p> Tu tarea es crear una clase llamada `Barco`. Esta clase debe tener un constructor con
+                    dos parametros: </p>
+                    <ul>
+                      <li><strong>calado: </strong> una estimacion del peso total del barco basado en cuan bajo se encuentra
+                      en el agua.</li>
+                      <li><strong>tripulacion: </strong> El numero de miembros de la tripulacion a bordo del barco.</li>
+                    </ul>
+                  <p>Adicionalmente, la clase debe tener un metodo llamado `valeLaPena`. Este metodo debe retornar 
+                    `true` o `false` segun si el barco vale la pena ser saqueado o no.</p>
+                    <ul>
+                      <li>Cada miembro de la tripulacion suma 1.5 unidades al calado del barco.</li>
+                      <li>Si el caladosigue siendo mas de 20 unidades despues de contabilizar el peso de la 
+                        tripuluacion, ¡¡entonces el barco vale la pena ser saqueado!!
+                      </li>
+                    </ul>
 
-          <pre><code><span>cosnt perlaNegra = new Barco (22,5);</span></code></pre>
-          <pre><code><span>perlaNegra.valeLaPena(); // Deberia retornar true </span></code></pre>
+                    <pre><code><span>cosnt perlaNegra = new Barco (22,5);</span></code></pre>
+                    <pre><code><span>perlaNegra.valeLaPena(); // Deberia retornar true </span></code></pre>
 
-          <pre><code><span>const titanic = new Barco (15, 10);</span></code></pre>
-          <pre><code><span>titanic.valeLaPena(); // Deberia retornar false</span></code></pre>
+                    <pre><code><span>const titanic = new Barco (15, 10);</span></code></pre>
+                    <pre><code><span>titanic.valeLaPena(); // Deberia retornar false</span></code></pre>
 
-          <strong><h3>Respuesta</h3></strong>
-            <pre><code><span>class Barco {</span></code></pre>
-            <pre><code><span>   // tu codigo aqui</span></code></pre>
-            <pre><code><span>}</span></code></pre>
+                    <strong><h3>Respuesta</h3></strong>
+                      <pre><code><span>class Barco {</span></code></pre>
+                      <pre><code><span>   // tu codigo aqui</span></code></pre>
+                      <pre><code><span>}</span></code></pre>
 
-
-
-
-
+                      
+            </article>
+          </div>
+        </div>
       </main>
     
-    </header>
+    
     </div>
   </body>
 </html>
