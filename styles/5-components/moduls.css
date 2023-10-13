@@ -1,0 +1,35 @@
+.section {
+    display: flex;
+    padding: var(--spacing-4, 16px) 0px;
+    flex-direction: column;
+    align-items: center;
+    gap: var(--rounded, 4px);
+    align-self: stretch;
+}
+.header {
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-4, 16px);
+    align-self: stretch;
+}
+.logo-2 {
+    width: 134.4px;
+    height: var(--spacing-8, 32px);
+}
+.header__navigation {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: var(--spacing-4, 16px);
+}
+.header_name {
+    flex: 1 0 0;
+    align-self: stretch;
+    color: var(--muted-foreground, #525252);
+    text-align: right;
+    font-family: Inter;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 24px;    
+}
