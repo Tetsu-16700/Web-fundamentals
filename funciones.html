@@ -75,14 +75,35 @@
                           <h3>Ejemplo</h3>
                             <div class="content-pre">                       
                               <pre><code><span>cosnt resultado = interactuarCadenas ("+-+", "+--");</span></code></pre>
-                              <pre><code><span>console.log(resultado0; // Devuelve "+-0"</span></code></pre>
+                              <pre><code><span>console.log(resultado); // Devuelve "+-0"</span></code></pre>
                             </div>
                           <h3>Respuesta</h3>
                             <div class="content-pre">
                               <pre><code><span>function interactuarCadenas(cadena1, cadena2) {</span></code></pre>
-                              <pre><code><span> // Tucodigo aqui</span></code></pre>
+                              <pre><code><span> // Tu codigo aqui</span></code></pre>
+                              <pre><code><span> if (cadena1.length !== cadena2.length) {</span></code></pre>
+                              <pre><code><span>   return "Las cadenas no tienen la misma longitud.";</span></code></pre>
+                              <pre><code><span> }</span></code></pre>
+                              <pre><code><span> let resultado = "";</span></code></pre>
+                              <pre><code><span> for (let i = 0; i < cadena1.length; i++) {</span></code></pre>
+                              <pre><code><span>     const char1 = cadena1[i];</span></code></pre>
+                              <pre><code><span>     const char2 = cadena2[i];</span></code></pre>
+                              <pre><code><span>     if (char1 === "+" && char2 === "+") {</span></code></pre>
+                                 
+                              <pre><code><span>         resultado += "+";</span></code></pre>
+                              <pre><code><span>     } else if (char1 === "-" && char2 === "-") {</span></code></pre>
+                                 
+                              <pre><code><span>         resultado += "-";</span></code></pre>
+                              <pre><code><span>     } else {</span></code></pre>
+                                  
+                              <pre><code><span>         resultado += "0";</span></code></pre>
+                              <pre><code><span>     }</span></code></pre>
+                              <pre><code><span>  }</span></code></pre>
+                            
+                              <pre><code><span>   return resultado;</span></code></pre>
                               <pre><code><span> } </span></code></pre>
                             </div>
+
                           <h2>Funcion `generarApodo`</h2>
 
                           <h3>Descripcion</h3>
@@ -116,9 +137,23 @@
                              <div class="content-pre">
                               <pre><code><span>function generarApodo (nombre) {</span></code></pre>
                               <pre><code><span>   // tu codigo aqui</span></code></pre>
+                              <pre><code><span>   if (nombre.length < 4) {</span></code></pre>
+                              <pre><code><span>       throw new Error("Nombre muy corto");</span></code></pre>
+                              <pre><code><span>   }</span></code></pre>
+                            
+                              <pre><code><span> const terceraLetra = nombre[2];</span></code></pre>
+                            
+                              <pre><code><span> const esVocal = "aeiou".includes(terceraLetra.toLowerCase());</span></code></pre>
+                            
+                              <pre><code><span> if (esVocal) {</span></code></pre>
+                              <pre><code><span>     return nombre.slice(0, 4);</span></code></pre>
+                              <pre><code><span> } else {</span></code></pre>
+                              <pre><code><span>     return nombre.slice(0, 3);</span></code></pre>
+                              <pre><code><span> }</span></code></pre>
                               <pre><code><span>}</span></code></pre>
                              </div>
-                          <h2>Funcion `obtenerMarcador `</h2>
+
+                          <h2>Funcion `obtenerMarcador`</h2>
 
                           <h3>Descripcion</h3>
 
@@ -148,6 +183,25 @@
                               <div class="content-pre">
                                 <pre><code><span>function obtenerMarcador(texto) {</span></code></pre>
                                 <pre><code><span>   // tu codigo aqui</span></code></pre>
+                                <pre><code><span> span>const palabras = texto.split(" ");</span></code></pre>
+
+                                <pre><code><span> const numeros = palabras.filter((palabra) => !isNaN(palabra));</span></code></pre>
+
+                                <pre><code><span> const marcadorNumeros = numeros.map((numero) => parseInt(numero));</span></code></pre>
+
+                                <pre><code><span> let marcador = [0, 0];</span></code></pre>
+
+                                <pre><code><span> for (let i = 0; i < palabras.length; i++) {</span></code></pre>
+                                <pre><code><span>     if (palabras[i].toLowerCase() === "marcador" || palabras[i].toLowerCase() === "nuevo") {</span></code></pre>
+                                <pre><code><span>        if (i + 1 < palabras.length && !isNaN(palabras[i + 1])) {</span></code></pre>
+                                <pre><code><span>           marcador[0] = parseInt(palabras[i + 1]);</span></code></pre>
+                                <pre><code><span>  }</span></code></pre>
+                                <pre><code><span>   if (i + 2 < palabras.length && !isNaN(palabras[i + 2])) {</span></code></pre>
+                                <pre><code><span>       marcador[1] = parseInt(palabras[i + 2]);</span></code></pre>
+                                <pre><code><span>     }</span></code></pre>
+                                <pre><code><span>    }</span></code></pre>
+                                <pre><code><span>   }</span></code></pre>
+                                <pre><code><span> return marcador;</span></code></pre>
                                 <pre><code><span>}</span></code></pre>
                               </div>
 
@@ -190,8 +244,19 @@
                             <h3 class="title-moduls1">Respuesta</h3>
                             <div class="content-pre">
                                 <pre><code><span>class Barco {</span></code></pre>
-                                <pre><code><span>   // tu codigo aqui</span></code></pre>
-                                <pre><code><span>}</span></code></pre>
+                                <pre><code><span>  // tu codigo aqui</span></code></pre>
+                                <pre><code><span>   constructor(calado, tripulacion) {</span></code></pre>
+                                <pre><code><span>        this.calado = calado;</span></code></pre>
+                                <pre><code><span>         this.tripulacion = tripulacion;</span></code></pre>
+                                <pre><code><span>   }</span></code></pre>
+                              
+                                <pre><code><span>   valeLaPena() {</span></code></pre>
+                                <pre><code><span>        const pesoTripulacion = this.tripulacion * 1.5;</span></code></pre>
+                                <pre><code><span>        const pesoTotal = this.calado + pesoTripulacion;</span></code></pre>
+                              
+                                <pre><code><span>      return pesoTotal < 20;</span></code></pre>
+                                <pre><code><span>   }</span></code></pre>
+                                <pre><code><span> }</span></code></pre>
                             </div> 
 
                               
