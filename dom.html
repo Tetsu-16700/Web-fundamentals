@@ -156,37 +156,47 @@
                           <pre><code><span>&lt;!--codigo del formulario aqui--&gt;</span></code></pre>
                         </div>
                       
-                        <form>
-                          <div class="demoForm">
-                            <div class="frame">
-                              <div class="form-Fiel">
-                                <div>
-                                  <label>Nombre</label>
-                                  <input>
-                                </div>
-                                <div>
-                                  <label>Apodo</label>
-                                  <input>
-                                </div>
-                                <div>
-                                  <label>Biografia</label>
-                                  <input>
-                                </div>
-                                <div>
-                                  <label>Contraseña</label>
-                                  <input>
-                                </div>
-                                <div>
-                                  <label>Confirmar contraseña</label>
-                                  <input>
-                                </div>
-                                <div>
-                                  <button class="form_Btt">Enviar</button>
-                                </div>  
-                              </div>
+                        <form class="demoForm">
+                          <div class="frame">
+                            <div class="form-Field">
+                              <label>Nombre</label>
+                              <input class="input-1" id="name" type="text" placeholder="Ramon Suarez" required>
+                              <div id="nombreError"></div>
                             </div>
+                        
+                            <div class="form-Field">
+                              <label>Apodo</label>
+                              <input class="input-1" id="apodo" type="text" placeholder="ramonsupersuarez" pattern="[A-Za-z0-9]{3,10}" required>
+                              <div  id="apodoError"></div>
+                              <small class="help-text">Entre 3-10 caracteres alfanuméricos</small>
+                            </div>
+                        
+                            <div class="form-Field">
+                              <label>Biografia</label>
+                              <textarea class="input-1" id="biografia" type="text" placeholder="Mi nombre es" required></textarea>
+                              <div  id="biografiaError"></div>
+                              <small class="help-text">Mínimo 100 caracteres</small>
+                            </div>
+                        
+                            <div class="form-Field">
+                              <label>Contraseña</label>
+                              <input class="input-1" id="password" type="password" placeholder="*****" required>
+                              <div  id="passwordError"></div>
+                              <small class="help-text">Mínimo 8 caracteres, 1 letra mayúscula, 1 número</small>
+                            </div>
+                        
+                            <div class="form-Field">
+                              <label>Confirmar contraseña</label>
+                              <input class="input-1" id="confirmPassword" type="password" placeholder="*****" required>
+                              <div  id="confirmPasswordError"></div>
+                            </div>
+                        
+                            <button class="form-Button" type="submit" id="submitBtn" disabled>Enviar</button>
                           </div>
                         </form>
+                        <div id="serverResponse" class="hidden">
+                          <!-- Aquí se mostrará la respuesta del servidor -->
+                        </div>
 
 
 
