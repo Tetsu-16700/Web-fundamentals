@@ -156,32 +156,38 @@
                           <pre><code><span>&lt;!--codigo del formulario aqui--&gt;</span></code></pre>
                         </div>
                       
-                        <form class="demoForm" id="myForm">
+                        <form class="demoForm" id="myForm" novalidate>
                           <div class="frame ">
 
                             <div class="form-Field">
                                 <label for="nombre">Nombre:</label>
-                                <input class="input-1" type="text" id="nombre" placeholder="Ramon Suarez" required>
+                                <input class="input-1" type="text" id="nombre" placeholder="Ramon Suarez" title="Obligatorio" required>
                                 <div class="error" id="nombreError"></div>
                             </div>
+
                             <div class="form-Field">
                                 <label for="apodo">Apodo</label>
-                                <input class="input-1" type="text" id="apodo" required pattern="[A-Za-z0-9]{3,10}" placeholder="ramonsupersuarez">
+                                <input class="input-1" type="text" id="apodo" pattern="[A-Za-z0-9]{3,10}" title="Entre 3 y 10 caracteres" placeholder="ramonsupersuarez" required>
                                 <div class="error" id="apodoError"></div>
                             </div>
+
                             <div class="form-Field">
                                 <label for="biografia">Biografía</label>
-                                <textarea class="input-1" id="biografia" minlength="100" required placeholder="Mi nombre es"></textarea>
+                                <textarea class="input-1" id="biografia" minlength="100" title="Min 100 caracteres" placeholder="Mi nombre es" required ></textarea>
                                 <div class="error" id="biografiaError"></div>
                             </div>
+
                             <div class="form-Field">
                                 <label for="password">Contraseña</label>
-                                <input class="input-1" type="password" id="password" required pattern="^(?=.*[A-Z])(?=.*\d).{8,}$" placeholder="Mi nombre es">
+                                <input class="input-1" type="password" id="password"  pattern="^(?=.*[A-Z])(?=.*\d).{8,}$" placeholder="Mi nombre es" 
+                                title= "Minimo 8 caracteres, al menos 1 letra MAYUS y 1 nro" required>
                                 <div class="error" id="passwordError"></div>
+                                
                             </div>
+                            
                             <div class="form-Field">
                                 <label for="confirmPassword">Confirmar Contraseña:</label>
-                                <input class="input-1" type="password" id="confirmPassword" required placeholder="Mi nombre es">
+                                <input class="input-1" type="password" id="confirmPassword" placeholder="Mi nombre es" title="Coincidir contraseña" required>
                                 <div class="error" id="confirmPasswordError"></div>
                             </div>
                                 <button class="form-Button" type="submit" id="submitBtn" disabled>Enviar</button>
