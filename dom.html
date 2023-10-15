@@ -156,48 +156,44 @@
                           <pre><code><span>&lt;!--codigo del formulario aqui--&gt;</span></code></pre>
                         </div>
                       
-                        <form class="demoForm">
-                          <div class="frame">
+                        <form class="demoForm" id="myForm">
+                          <div class="frame ">
+
                             <div class="form-Field">
-                              <label>Nombre</label>
-                              <input class="input-1" id="name" type="text" placeholder="Ramon Suarez" required>
-                              <div id="nombreError"></div>
+                                <label for="nombre">Nombre:</label>
+                                <input class="input-1" type="text" id="nombre" placeholder="Ramon Suarez" required>
+                                <div class="error" id="nombreError"></div>
                             </div>
-                        
                             <div class="form-Field">
-                              <label>Apodo</label>
-                              <input class="input-1" id="apodo" type="text" placeholder="ramonsupersuarez" pattern="[A-Za-z0-9]{3,10}" required>
-                              <div  id="apodoError"></div>
-                              <small class="help-text">Entre 3-10 caracteres alfanuméricos</small>
+                                <label for="apodo">Apodo</label>
+                                <input class="input-1" type="text" id="apodo" required pattern="[A-Za-z0-9]{3,10}" placeholder="ramonsupersuarez">
+                                <div class="error" id="apodoError"></div>
                             </div>
-                        
                             <div class="form-Field">
-                              <label>Biografia</label>
-                              <textarea class="input-1" id="biografia" type="text" placeholder="Mi nombre es" required></textarea>
-                              <div  id="biografiaError"></div>
-                              <small class="help-text">Mínimo 100 caracteres</small>
+                                <label for="biografia">Biografía</label>
+                                <textarea class="input-1" id="biografia" minlength="100" required placeholder="Mi nombre es"></textarea>
+                                <div class="error" id="biografiaError"></div>
                             </div>
-                        
                             <div class="form-Field">
-                              <label>Contraseña</label>
-                              <input class="input-1" id="password" type="password" placeholder="*****" required>
-                              <div  id="passwordError"></div>
-                              <small class="help-text">Mínimo 8 caracteres, 1 letra mayúscula, 1 número</small>
+                                <label for="password">Contraseña</label>
+                                <input class="input-1" type="password" id="password" required pattern="^(?=.*[A-Z])(?=.*\d).{8,}$" placeholder="Mi nombre es">
+                                <div class="error" id="passwordError"></div>
                             </div>
-                        
                             <div class="form-Field">
-                              <label>Confirmar contraseña</label>
-                              <input class="input-1" id="confirmPassword" type="password" placeholder="*****" required>
-                              <div  id="confirmPasswordError"></div>
+                                <label for="confirmPassword">Confirmar Contraseña:</label>
+                                <input class="input-1" type="password" id="confirmPassword" required placeholder="Mi nombre es">
+                                <div class="error" id="confirmPasswordError"></div>
                             </div>
-                        
-                            <button class="form-Button" type="submit" id="submitBtn" disabled>Enviar</button>
-                          </div>
+                                <button class="form-Button" type="submit" id="submitBtn" disabled>Enviar</button>
+                              
+                              
+                          </div>                           
+                          
                         </form>
+                      
                         <div id="serverResponse" class="hidden">
                           <!-- Aquí se mostrará la respuesta del servidor -->
                         </div>
-
 
 
 
