@@ -1,4 +1,7 @@
-
+body {
+  background-color: white;
+  color: black;
+}
 /* Media query para el tema claro */
 @media screen and (prefers-color-scheme: light) {
     :root {

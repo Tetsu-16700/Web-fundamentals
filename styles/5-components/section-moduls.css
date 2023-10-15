@@ -1,5 +1,4 @@
 
-/* Variables CSS */
 :root {
     --content-headings: hsl(0, 0%, 9%);
     --foreground: hsl(0, 0%, 9%);
@@ -7,8 +6,6 @@
     --spacing-2: 8px;
     --rounded: 4px;
   }
-  
-  /* Estilos globales */
   .section-moduls, 
   .container-1, 
   .article, 
@@ -26,7 +23,6 @@
     font-weight: 600;
     line-height: 24px; /* 150% */
   }
-  
   .header-p{
     color: var(--content-body, #171717);    
     font-family: Inter;
@@ -35,7 +31,6 @@
     font-weight: 400;
     line-height: 28px;
   }
-  /* Sección de módulos */
   .section-moduls {
     display: flex;
     flex-direction: column;
@@ -43,20 +38,14 @@
     gap: var(--rounded);
     margin: 0 384px;
   }
-  
-  /* Contenedor */
   .container-1 {
     max-width: 1280px;
     align-items: center;
   }
-  
-  /* Artículo */
   .article {
     max-width: 672px;
     align-items: flex-start;
   }
-  
-  /* Títulos */
   .title-moduls {
     color: var(--content-headings);
     font-family: Inter;
@@ -64,7 +53,6 @@
     font-weight: 800;
     line-height: 40px;
   }
-  
   .title-moduls1 {
     color: var(--content-headings);
     font-family: Inter;
@@ -72,8 +60,6 @@
     font-weight: 700;
     line-height: 32px;
   }
-  
-  /* Contenido preformateado */
   .content-pre {
     padding: 12px 16px;
     color: var(--muted);
@@ -92,9 +78,7 @@
   font-style: normal;
   font-size: 14px;
 }
-
-  /* Formularios de módulos */
-  .moduls-form {
+.moduls-form {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -104,37 +88,27 @@
 
   align-self: stretch;
 }
-
-
-  .radio {
+.radio {
     width: 16px;
     height: 16px;
     accent-color:hsl(263, 70%, 50%) ;
 
   }
-
 .contnt-ul{
-    
   display: flex;
   flex-direction: column;
   gap: var(--spacing-4);
-  
-  
   margin-block: var(--spacing-5);
   padding-left: 32px;
 }
 .contnt-li{
-    
-    color: black; /* Color del contenido en negro */
-  
+    color: black; 
     margin-block: var(--spacing-3);
-  
-    /* text-base/leading-7/regular */
     font-family: Inter;
     font-size: 16px;
     font-style: normal;
     font-weight: 400;
-    line-height: 28px; /* 175% */
+    line-height: 28px; 
 }
 .content-li::marker {
     color: hsl(263, 70%, 50%);
