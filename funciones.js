@@ -46,26 +46,29 @@ function generarApodo(nombre) {
 
 function obtenerMarcador(texto) {
   // Tu código aquí
-  const palabras = texto.split(" ");
-
-  const numeros = palabras.filter((palabra) => !isNaN(palabra));
-
-  const marcadorNumeros = numeros.map((numero) => parseInt(numero));
-
-  let marcador = [0, 0];
-
-  for (let i = 0; i < palabras.length; i++) {
-    if (palabras[i].toLowerCase() === "marcador" || palabras[i].toLowerCase() === "nuevo") {
-      if (i + 1 < palabras.length && !isNaN(palabras[i + 1])) {
-        marcador[0] = parseInt(palabras[i + 1]);
-      }
-      if (i + 2 < palabras.length && !isNaN(palabras[i + 2])) {
-        marcador[1] = parseInt(palabras[i + 2]);
-      }
-    }
+  const palabrasNumeros = {
+    cero: 0,
+    uno: 1,
+    dos: 2,
+    tres: 3,
+    cuatro: 4,
+    cinco: 5,
+    seis: 6,
+    siete: 7,
+    ocho: 8,
+    nueve: 9,
+  };  
+  const palabrasEncontradas = texto.match(/\b(cero|uno|dos|tres|cuatro|cinco|seis|siete|ocho|nueve)\b/g);
+  if (palabrasEncontradas && palabrasEncontradas.length >= 2) {
+        const marcador = palabrasEncontradas.slice(0, 2).map((palabra) => palabrasNumeros[palabra]);
+    return marcador;
+  } else {
+    
+    return [0, 0];
   }
-  return marcador;
+
 }
+
 
 class Barco {
   // Tu código aquí
@@ -75,9 +78,9 @@ class Barco {
   }
 
   valeLaPena() {
-    const pesoTripulacion = this.tripulacion * 1.5;
-    const pesoTotal = this.calado + pesoTripulacion;
+    
+    const caladoDespuesDeTripulacion = this.calado - this.tripulacion * 1.5;
 
-    return pesoTotal < 20;
+    return caladoDespuesDeTripulacion > 20;
   }
 }
