@@ -183,26 +183,28 @@
                               <div class="content-pre">
                                 <pre><code><span>function obtenerMarcador(texto) {</span></code></pre>
                                 <pre><code><span>   // tu codigo aqui</span></code></pre>
-                                <pre><code><span> span>const palabras = texto.split(" ");</span></code></pre>
-
-                                <pre><code><span> const numeros = palabras.filter((palabra) => !isNaN(palabra));</span></code></pre>
-
-                                <pre><code><span> const marcadorNumeros = numeros.map((numero) => parseInt(numero));</span></code></pre>
-
-                                <pre><code><span> let marcador = [0, 0];</span></code></pre>
-
-                                <pre><code><span> for (let i = 0; i < palabras.length; i++) {</span></code></pre>
-                                <pre><code><span>     if (palabras[i].toLowerCase() === "marcador" || palabras[i].toLowerCase() === "nuevo") {</span></code></pre>
-                                <pre><code><span>        if (i + 1 < palabras.length && !isNaN(palabras[i + 1])) {</span></code></pre>
-                                <pre><code><span>           marcador[0] = parseInt(palabras[i + 1]);</span></code></pre>
-                                <pre><code><span>  }</span></code></pre>
-                                <pre><code><span>   if (i + 2 < palabras.length && !isNaN(palabras[i + 2])) {</span></code></pre>
-                                <pre><code><span>       marcador[1] = parseInt(palabras[i + 2]);</span></code></pre>
-                                <pre><code><span>     }</span></code></pre>
-                                <pre><code><span>    }</span></code></pre>
-                                <pre><code><span>   }</span></code></pre>
-                                <pre><code><span> return marcador;</span></code></pre>
-                                <pre><code><span>}</span></code></pre>
+                                <pre><code><span> const palabrasNumeros = {</span></code></pre>
+                                <pre><code><span>    cero: 0,</span></code></pre>
+                                <pre><code><span>    uno: 1,</span></code></pre>
+                                <pre><code><span>    dos: 2,</span></code></pre>
+                                <pre><code><span>    tres: 3,</span></code></pre>
+                                <pre><code><span>    cuatro: 4,</span></code></pre>
+                                <pre><code><span>    cinco: 5,</span></code></pre>
+                                <pre><code><span>    seis: 6,</span></code></pre>
+                                <pre><code><span>    siete: 7,</span></code></pre>
+                                <pre><code><span>    ocho: 8,</span></code></pre>
+                                <pre><code><span>    nueve: 9,</span></code></pre>
+                                <pre><code><span>   };  </span></code></pre>
+                                <pre><code><span> const palabrasEncontradas = </span></code></pre>
+                                <pre><code><span>      texto.match(/\b(cero|uno|dos|tres|cuatro|cinco|seis|siete|ocho|nueve)\b/g);</span></code></pre>
+                                <pre><code><span> if (palabrasEncontradas && palabrasEncontradas.length >= 2) {</span></code></pre>
+                                <pre><code><span>             const marcador = palabrasEncontradas.slice(0, 2).map((palabra) => </span></code></pre>
+                                <pre><code><span>pan>palabrasNumeros[palabra]);</span></code></pre>
+                                <pre><code><span>     return marcador;</span></code></pre>
+                                <pre><code><span>  } else {</span></code></pre>
+                                  
+                                <pre><code><span>  return [0, 0];</span></code></pre>
+                                <pre><code><span> }</span></code></pre>
                               </div>
 
                           <h2>Clase `Barco`</h2>
@@ -234,7 +236,7 @@
                               </li>
                             </ul>
                             <div class="content-pre">
-                                <pre><code><span>cosnt perlaNegra = new Barco(22,5);</span></code></pre>
+                                <pre><code><span>cosnt perlaNegra = new Barco(32,5);</span></code></pre>
                                 <pre><code><span>perlaNegra.valeLaPena(); // Deberia retornar true </span></code></pre>
 
                                 <pre><code><span>const titanic = new Barco(15, 10);</span></code></pre>
@@ -247,16 +249,16 @@
                                 <pre><code><span>  // tu codigo aqui</span></code></pre>
                                 <pre><code><span>   constructor(calado, tripulacion) {</span></code></pre>
                                 <pre><code><span>        this.calado = calado;</span></code></pre>
-                                <pre><code><span>         this.tripulacion = tripulacion;</span></code></pre>
+                                <pre><code><span>        this.tripulacion = tripulacion;</span></code></pre>
                                 <pre><code><span>   }</span></code></pre>
                               
-                                <pre><code><span>   valeLaPena() {</span></code></pre>
-                                <pre><code><span>        const pesoTripulacion = this.tripulacion * 1.5;</span></code></pre>
-                                <pre><code><span>        const pesoTotal = this.calado + pesoTripulacion;</span></code></pre>
+                                <pre><code><span> valeLaPena() {</span></code></pre>
+                                  
+                                <pre><code><span>     const caladoDespuesDeTripulacion = this.calado - this.tripulacion * 1.5;</span></code></pre>
                               
-                                <pre><code><span>      return pesoTotal < 20;</span></code></pre>
+                                <pre><code><span>      return caladoDespuesDeTripulacion > 20;</span></code></pre>
+                                <pre><code><span>     }</span></code></pre>
                                 <pre><code><span>   }</span></code></pre>
-                                <pre><code><span> }</span></code></pre>
                             </div> 
 
                               <a class=" to__top " href="#article-start">
