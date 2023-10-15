@@ -36,4 +36,24 @@
     font-weight: 600;
     line-height: 24px;
   }
-  
+  .header_link-1, .header_link-2 {
+    display: flex;
+    align-self: center;
+    justify-content: center;
+    padding: var(--spacing-2, 8px) var(--spacing-3, 12px);
+    text-decoration: none;
+    color: var(--foreground, hsl(0, 0%, 9%));
+    border-radius: var(--rounded-md, 6px);
+
+  }
+  .header_link-1 {
+    align-items: flex-start;
+    gap: var(--spacing-4);
+    
+    
+  }
+  .header_link-2 {
+    padding: var(--spacing-2) var(--spacing-3);
+    align-items: center;
+    
+  }
