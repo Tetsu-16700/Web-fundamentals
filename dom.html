@@ -142,18 +142,96 @@
                             campos sean validos.
                           </li>
                           <li class="contnt-li marker">Al hacer clic en enviar, simula una peticion al servidor utilizando JavaScript. El 
-                            metodo debe hacer POST, la URL sera el servicio echo '​https://mocktarget.apigee.net/
+                            metodo debe hacer POST, la URL sera el servicio echo '​https://mocktarget. apigee.net/
                             echo'. Debera tener el header Content-Type adecuado. 
                           </li>
-                          <li class="contnt-li marker">Luego de procesar la respuesta, a;ade un elemento bajo del formulario que 
+                          <li class="contnt-li marker">Luego de procesar la respuesta, añade un elemento bajo del formulario que 
                             muestre la respuesta del servidor en formato JSON.
                           </li>
                         </ul>
 
                       <h3 class="title-moduls1">Demo</h3>
                       <p class="header-p ">A continuacion, presenta una demostracion del Formulario con validacion.</p>
+                      
                         <div class="content-pre">
-                          <pre><code><span>&lt;!--codigo del formulario aqui--&gt;</span></code></pre>
+                          <pre><code><span>                 &lt;!--codigo del formulario aqui--&gt;</span></code></pre>
+                          <pre><code><span>const form = document.getElementById("myForm");</span></code></pre>
+                          <pre><code><span>const submitBtn = document.getElementById("submitBtn");</span></code></pre>
+                          <pre><code><span>const serverResponse = document.getElementById("serverResponse");</span></code></pre>
+
+                          <pre><code><span>const savedFormData = JSON.parse(localStorage.getItem("formData")) || {};</span></code></pre>
+
+                          <pre><code><span>function showError(input, message) {</span></code></pre>
+                          <pre><code><span>    const errorDiv = document.getElementById(`${input.id}Error`);</span></code></pre>
+                          <pre><code><span>    errorDiv.textContent = message;</span></code></pre>
+                          <pre><code><span>    input.classList.add("error");</span></code></pre>
+                          <pre><code><span> }</span></code></pre>
+                          <pre><code><span>function showSuccess(input) {</span></code></pre>
+                          <pre><code><span>    const errorDiv = document.getElementById(`${input.id}Error`);</span></code></pre>
+                          <pre><code><span>    errorDiv.textContent = "";</span></code></pre>
+                          <pre><code><span>    input.classList.remove("error");</span></code></pre>
+                          <pre><code><span> }</span></code></pre>
+                          <pre><code><span>function validateField(input) {</span></code></pre>
+                          <pre><code><span>    if (input.checkValidity()) {</span></code></pre>
+                          <pre><code><span>        showSuccess(input);</span></code></pre>
+                          <pre><code><span>    } else {</span></code></pre>
+                          <pre><code><span>      showError(input, input.validationMessage);</span></code></pre>
+                          <pre><code><span>  }</span></code></pre>
+                          <pre><code><span>}</span></code></pre>
+                          <pre><code><span>form.addEventListener("input", (e) => {</span></code></pre>
+                          <pre><code><span>    if (e.target.tagName === "INPUT" || e.target.tagName === "TEXTAREA") {</span></code></pre>
+                          <pre><code><span>    validateField(e.target);</span></code></pre>
+                          <pre><code><span>    saveFormData();</span></code></pre>
+                          <pre><code><span>    checkFormValidity();</span></code></pre>
+                          <pre><code><span>  }</span></code></pre>
+                          <pre><code><span>});</span></code></pre>
+                          <pre><code><span>function checkFormValidity() {</span></code></pre>
+                          <pre><code><span>    const isValid = form.checkValidity();</span></code></pre>
+                          <pre><code><span>    submitBtn.disabled = !isValid;</span></code></pre>
+                          <pre><code><span> }</span></code></pre>
+                          <pre><code><span>function saveFormData() {</span></code></pre>
+                          <pre><code><span>    const formData = {</span></code></pre>
+                          <pre><code><span>    nombre: form.nombre.value,</span></code></pre>
+                          <pre><code><span>    apodo: form.apodo.value,</span></code></pre>
+                          <pre><code><span>    biografia: form.biografia.value,</span></code></pre>
+                          <pre><code><span>  };</span></code></pre>
+                          <pre><code><span>  localStorage.setItem("formData", JSON.stringify(formData));</span></code></pre>
+                          <pre><code><span> }</span></code></pre>
+
+                          <pre><code><span> form.nombre.value = savedFormData.nombre || "";</span></code></pre>
+                          <pre><code><span> form.apodo.value = savedFormData.apodo || "";</span></code></pre>
+                          <pre><code><span> form.biografia.value = savedFormData.biografia || "";</span></code></pre>
+
+                          <pre><code><span> validateField(form.nombre);</span></code></pre>
+                          <pre><code><span> validateField(form.apodo);</span></code></pre>
+                          <pre><code><span> validateField(form.biografia);</span></code></pre>
+                          <pre><code><span> validateField(form.password);</span></code></pre>
+
+                          <pre><code><span> form.confirmPassword.addEventListener("input", (e) => {</span></code></pre>
+                          <pre><code><span>    const password = form.password.value;</span></code></pre>
+                          <pre><code><span>    const confirmPassword = e.target.value;</span></code></pre>
+
+                          <pre><code><span>    if (password === confirmPassword) {</span></code></pre>
+                          <pre><code><span>       showSuccess(e.target);</span></code></pre>
+                          <pre><code><span>    } else {</span></code></pre>
+                          <pre><code><span>       showError(e.target, "Las contraseñas no coinciden");</span></code></pre>
+                          <pre><code><span>   }</span></code></pre>
+                          <pre><code><span>   checkFormValidity();</span></code></pre>
+                          <pre><code><span>  });</span></code></pre>
+
+                          <pre><code><span> form.addEventListener("submit", (e) => {</span></code></pre>
+                          <pre><code><span>    e.preventDefault();</span></code></pre>
+                            
+                          <pre><code><span>    serverResponse.textContent = "Enviando datos al servidor...";</span></code></pre>
+                          <pre><code><span>    serverResponse.classList.remove("hidden");</span></code></pre>
+                          <pre><code><span>    setTimeout(() => {</span></code></pre>
+                          <pre><code><span>       serverResponse.textContent = "Respuesta del servidor: Datos enviados correctamente."; </span></code></pre>
+                            
+                          <pre><code><span>       form.reset();</span></code></pre>
+                          <pre><code><span>   }, 2000);</span></code></pre>
+                          <pre><code><span> });</span></code></pre>
+
+
                         </div>
                       
                         <form class="demoForm" id="myForm" novalidate>
