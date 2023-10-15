@@ -87,3 +87,12 @@
 .link-2:hover {
   color: hsl(263, 91%, 46%); 
 }
+.fig-Diagrams{
+  color: var(--content-captions, #525252);
+  font-family: Inter;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px; /* 142.857% */
+
+}
