@@ -32,19 +32,20 @@
             <path d="M229.5 45.1113C222.496 46.6213 215.84 42.8462 214.333 35.716C212.655 27.7786 216.514 19.4381 225.37 18.7534C228.154 18.5388 230.951 19.0316 233.296 20.6177C236.435 22.7409 238.285 26.1993 238.499 29.9914C238.558 31.0405 238.557 32.135 238.495 33.2749C238.493 33.3019 238.481 33.3271 238.461 33.3452C238.441 33.3632 238.415 33.3727 238.388 33.3715C237.074 33.3045 235.422 33.3567 234.445 33.3578C229.432 33.3639 224.42 33.3635 219.408 33.3567C219.4 33.3567 219.393 33.3582 219.386 33.3611C219.38 33.3641 219.374 33.3684 219.368 33.3738C219.363 33.3792 219.359 33.3856 219.357 33.3926C219.354 33.3996 219.353 33.4071 219.353 33.4146C219.62 38.2536 223.43 41.3373 228.249 40.3506C229.893 40.0138 231.118 39.1108 231.924 37.6416C232.073 37.3691 232.221 37.0932 232.367 36.8139C232.375 36.7989 232.387 36.7863 232.401 36.7775C232.415 36.7687 232.432 36.764 232.449 36.764L237.808 36.781C237.815 36.7809 237.822 36.7825 237.829 36.7858C237.836 36.789 237.841 36.7937 237.846 36.7995C237.85 36.8053 237.854 36.8121 237.855 36.8194C237.856 36.8266 237.856 36.8341 237.854 36.8412C236.799 40.9229 233.676 44.2109 229.5 45.1113ZM233.058 29.1342C232.867 26.4979 231.069 24.3406 228.508 23.6991C224.41 22.6739 220.439 24.9015 219.572 29.1308C219.571 29.1378 219.571 29.145 219.573 29.1519C219.574 29.1589 219.577 29.1653 219.582 29.1709C219.586 29.1765 219.592 29.1809 219.598 29.184C219.605 29.1871 219.612 29.1887 219.619 29.1887H233.007C233.014 29.1887 233.021 29.1873 233.028 29.1845C233.034 29.1817 233.04 29.1777 233.045 29.1726C233.049 29.1675 233.053 29.1614 233.056 29.1548C233.058 29.1482 233.059 29.1412 233.058 29.1342Z" fill="#18181B"/>
           </svg>
            </a>
-            <nav class="header__navigation ">
-              <ul>
-                <a href="/diagramas.html">Diagramas VV</a>
-                <a href="/funciones.html">Funciones</a>
-                <a href="/dom.html">Manipulación del DOM</a>
-              </ul>
-            </nav>
-            <div class="header_name">
-              <ul>
-                <a>Fernanda Moscoso</a>
-              </ul>
-            </div>
-          
+            
+                <nav class=" header_link-1 ">
+                  
+                    <a  class="header_link-2" href="/diagramas.html">Diagramas VV</a>
+                    <a  class="header_link-2" href="/funciones.html">Funciones</a>
+                    <a  class="header_link-2" href="/dom.html">Manipulación del DOM</a>
+                  
+                </nav>
+                <div class="header_name">
+                  <ul>
+                    <a>Fernanda Moscoso</a>
+                  </ul>
+                </div>
+            
         </header>
       </div>
 
@@ -61,7 +62,7 @@
                               El diagrama deberá contener únicamente las variables y 
                               valores que permanecen en la memoria. Luego contesta las 
                               preguntas dejando marcado (checked) el radio button o 
-                              el/los checkboxes correspondientes.</p>
+                              el/los radioes correspondientes.</p>
               
                         <h2 >Ejercicios</h2>
 
@@ -90,37 +91,43 @@
                                   <pre><code><span>  };</span></code></pre>
                               </div>
                     <!--esta imagen se pone como referencia para ser cambiada al desarrollar el figma-->
-                                <img
-                                src="/assets/Diagrama/Ejercicio1.png"
-                                alt="Ejercicio1"
-                                width="450"
-                                height="500"
-                                class="author__avatar">
-
-                                <p>Diagrama al final de la ejecucion</p>
-                              <div class="moduls-form">
-                                <p>La expresion `juan.edad === sandra.edad` retorna:</p>
-                                    <div>    
-                                      <label ><input class='radio' type="checkbox">true</label>
-                                    </div>
-                                    <div>
-                                      <label ><input class='radio' type="checkbox">false</label>
-                                    </div>
-                                  
-                                <p>La expresion `juan.residencia === sandra.residencia` retorna:</p>
-                                    <div>
-                                      <label><input class='radio' type="checkbox">true</label>
-                                    </div>
-                                    <div>
-                                      <label><input class='radio' type="checkbox">false</label>
+                             
+                                   <img
+                                      src="/assets/Diagrama/Ejercicio1.png"
+                                      alt="Ejercicio1"
+                                      width="650"
+                                      height="550"
+                                      class="author__avatar">
+                                  <p class="content-p">Diagrama al final de la ejecucion</p>
+                              
+                                <div class="moduls-form">
+                                  <div class="form-field">
+                                    <p>La expresion `juan.edad === sandra.edad` retorna:</p>
+                                      <div>    
+                                        <label ><input class='radio' type="radio">true</label>
+                                      </div>
+                                      <div>
+                                        <label ><input class='radio' type="radio">false</label>
+                                      </div>
                                     </div>
 
-                                <p>La expresion `juan.residencia.ciudad === sandra.residencia.ciudad` retorna:</p>
-                                  <div>
-                                    <label><input class='radio' type="checkbox">true</label>
-                                  </div>  
-                                  <div>
-                                    <label><input class='radio' type="checkbox">false</label>
+                                  <div class="form-field">
+                                    <p>La expresion `juan.residencia === sandra.residencia` retorna:</p>
+                                        <div>
+                                          <label><input class='radio' type="radio">true</label>
+                                        </div>
+                                        <div>
+                                          <label><input class='radio' type="radio">false</label>
+                                        </div>
+                                  </div>
+                                  <div class="form-field">
+                                    <p>La expresion `juan.residencia.ciudad === sandra.residencia.ciudad` retorna:</p>
+                                      <div>
+                                        <label><input class='radio' type="radio">true</label>
+                                      </div>  
+                                      <div>
+                                        <label><input class='radio' type="radio">false</label>
+                                      </div>
                                   </div>
                               </div>
                           <h3>Ejercicio 2</h3>
@@ -143,44 +150,45 @@
                               width="450"
                               height="500"
                               class="author__avatar">
-                              <p>Diagrama al final de la ejecucion</p>
+                              <p class="content-p">Diagrama al final de la ejecucion</p>
+                            <div class="form-field">
+                              <p>La expresion `objeto1.a + objeto2.b === objeto2.a` retorna:</p>
+                                  <div>
+                                    <label><input class="radio" type="radio">true</label>
+                                  </div>
+                                  <div>
+                                    <label><input class="radio" type="radio">false</label>
+                                  </div>
+                            </div>
+                            <div class="form-field">
+                              <p>El valor de `objeto3.b` es:</p>
+                                  <div>
+                                    <label><input class="radio" type="radio">5</label>
+                                  </div>
+                                    
+                                  <div>
+                                    <label><input class="radio" type="radio">10</label>
+                                  </div>
+                                  <div>
+                                    <label><input class="radio" type="radio">null</label>
+                                  </div>
+                                  <div>
+                                    <label><input class="radio" type="radio">undefined</label>
+                                  </div>
+                                  <div>
+                                    <label><input class="radio" type="radio">Error</label>
+                                  </div>
+                            </div>
+                            <div class="form-field">
+                              <p>La expresion `objeto1.a === objeto1.b` retorna:</p>
 
-                            <p>La expresion `objeto1.a + objeto2.b === objeto2.a` retorna:</p>
-                                <div>
-                                  <label><input type="checkbox">true</label>
-                                </div>
-                                <div>
-                                  <label><input type="checkbox">false</label>
-                                </div>
-                                  
-
-                            <p>El valor de `objeto3.b` es:</p>
-                                <div>
-                                  <label><input type="checkbox">5</label>
-                                </div>
-                                  
-                                <div>
-                                  <label><input type="checkbox">10</label>
-                                </div>
-                                <div>
-                                  <label><input type="checkbox">null</label>
-                                </div>
-                                <div>
-                                  <label><input type="checkbox">undefined</label>
-                                </div>
-                                <div>
-                                  <label><input type="checkbox">Error</label>
-                                </div>
-                                  
-
-                            <p>La expresion `objeto1.a === objeto1.b` retorna:</p>
-
-                                <div>
-                                  <label><input type="checkbox">Error</label>
-                                </div>
-                                <div>
-                                  <label><input type="checkbox">false</label>
-                                </div>
+                                  <div>
+                                    <label><input class="radio" type="radio">Error</label>
+                                  </div>
+                                  <div>
+                                    <label><input class="radio" type="radio">false</label>
+                                  </div>
+                            </div>
                                   
 
                           <h3>Ejercicio 3</h3>
@@ -213,7 +221,7 @@
                               width="400"
                               height="350"
                               class="author__avatar">
-                              <p>Diagrama en punto A</p>
+                              <p class="content-p">Diagrama en punto A</p>
 
                     <!--esta imagen se pone como referencia para ser cambiada al desarrollar el figma-->
                               <img
@@ -222,38 +230,40 @@
                               width="400"
                               height="400"
                               class="author__avatar">
-                              <p>Diagrama en punto B</p>
+                              <p class="content-p">Diagrama en punto B</p>
 
-                            <p>El valor de resultado `resultado` es</p>
-
-                                  <div>
-                                    <label><input type="checkbox">['pera','manzana','durazno']</label>
-                                  </div>
-                                  <div>
-                                    <label><input type="checkbox">'durazno'</label>
-                                  </div>
-                                  <div>
-                                    <label><input type="checkbox">3</label>
-                                  </div>
-                                  <div>
-                                    <label><input type="checkbox">4</label>
-                                  </div>
-
-                            <p>El valor de `frutas.length` en el Punto B es:</p>
+                              <div class="form-field">
+                                <p>El valor de resultado `resultado` es</p>
 
                                   <div>
-                                    <label><input type="checkbox">2</label>
+                                    <label><input class="radio" type="radio">['pera','manzana','durazno']</label>
                                   </div>
                                   <div>
-                                    <label><input type="checkbox">3</label>
+                                    <label><input class="radio" type="radio">'durazno'</label>
                                   </div>
                                   <div>
-                                    <label><input type="checkbox">4</label>
+                                    <label><input class="radio" type="radio">3</label>
                                   </div>
                                   <div>
-                                    <label><input type="checkbox">undefined</label>
+                                    <label><input class="radio" type="radio">4</label>
                                   </div>
-                                  
+                              </div>
+                              <div class="form-field">
+                                <p>El valor de `frutas.length` en el Punto B es:</p>
+
+                                      <div>
+                                        <label><input class="radio" type="radio">2</label>
+                                      </div>
+                                      <div>
+                                        <label><input class="radio" type="radio">3</label>
+                                      </div>
+                                      <div>
+                                        <label><input class="radio" type="radio">4</label>
+                                      </div>
+                                      <div>
+                                        <label><input type="radio">undefined</label>
+                                      </div>
+                                </div>
 
                           <h3>Ejercicio 4</h3>    
                           <p class="header-p ">Analiza el siguiente código y dibuja un diagrama VV al finalizar la ejecución. 
@@ -291,44 +301,49 @@
                             width="40"
                             height="50"
                             class="author__avatar">
-                            <p>Diagrama al final de la ejecucion</p>
+                            <p class="content-p">Diagrama al final de la ejecucion</p>
 
-                            <p>Marca todas las correctas</p>
-                                  
-                                <div>
-                                  <label><input type="checkbox">`Persona` y `Mago` son funciones constructoras</label>
-                                </div>
-                                <div>
-                                  <label><input type="checkbox"> El prototipo de `harry` es `petunia`</label>
-                                </div>
-                                <div>
-                                  <label><input type="checkbox"> Los objetos creado con la funcion `Mago` tiene acceso al metodo `presentarse`</label>
-                                </div>
-                                <div>
-                                  <label><input type="checkbox"> El uso de la palabra `new` es opcional</label>
-                                </div>
-                                <div>
-                                  <label><input type="checkbox"> Solo el objeto `harry` tiene acceso al metodo `invocarHechizo`</label>
-                                </div>
-                            <p>`harry` es una instancia de `Persona `</p>
+                            <div class="form-field">
+                                <p>Marca todas las correctas</p>
+                                    <div>
+                                      <label><input class="radio" type="radio">`Persona` y `Mago` son funciones constructoras</label>
+                                    </div>
+                                    <div>
+                                      <label><input class="radio" type="radio"> El prototipo de `harry` es `petunia`</label>
+                                    </div>
+                                    <div>
+                                      <label><input class="radio" type="radio"> Los objetos creado con la funcion `Mago` tiene acceso al metodo `presentarse`</label>
+                                    </div>
+                                    <div>
+                                      <label><input class="radio" type="radio"> El uso de la palabra `new` es opcional</label>
+                                    </div>
+                                    <div>
+                                      <label><input class="radio" type="radio"> Solo el objeto `harry` tiene acceso al metodo `invocarHechizo`</label>
+                                    </div>
+                            </div>
+                            <div class="form-field">
+                                <p>`harry` es una instancia de `Persona `</p>
 
-                                <div>
-                                  <label><input type="checkbox">true</label>
-                                </div>
-                                <div>
-                                  <label><input type="checkbox">false</label>
-                                </div>
-                            <p>La expresion `harry.invocarHechizo.call(petunia)` retorna</p>
+                                    <div>
+                                      <label><input class="radio" type="radio">true</label>
+                                    </div>
+                                    <div>
+                                      <label><input class="radio" type="radio">false</label>
+                                    </div>
+                            </div>
+                            <div class="form-field">
+                                <p>La expresion `harry.invocarHechizo.call(petunia)` retorna</p>
 
-                                  <div>
-                                    <label><input type="checkbox">'Harry invoca in hechizo'</label>
-                                  </div>
-                                  <div>
-                                    <label><input type="checkbox">'Petunia invoca un hechizo'</label>
-                                  </div>
-                                  <div>
-                                    <label><input type="checkbox">Error</label>
-                                  </div>
+                                      <div>
+                                        <label><input class="radio" type="radio">'Harry invoca in hechizo'</label>
+                                      </div>
+                                      <div>
+                                        <label><input class="radio" type="radio">'Petunia invoca un hechizo'</label>
+                                      </div>
+                                      <div>
+                                        <label><input class="radio" type="radio">Error</label>
+                                      </div>
+                            </div>
 
                           <p>Re-escribe el codigo usando la sintaxis de Clase de 
                             JavaScript </p>
