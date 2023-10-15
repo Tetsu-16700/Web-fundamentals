@@ -58,13 +58,32 @@
     justify-content: center;
     text-decoration: none;
     color: var(--foreground, hsl(0, 0%, 9%));
+    transition: color 0.5s;
   }
   .link-1 {
     align-items: flex-start;
     gap: var(--spacing-4);
+    transition: color 0.5s;
   }
   .link-2 {
-    padding: var(--spacing-2) var(--spacing-3);
+    padding: var(--spacing-2) var(--spacing-3, 12px);
     align-items: center;
+    transition: color 0.5s;
   }
-  
+.colors{
+  background-color: var(--background-active, #f0e7f1);  
+  transition: color 0.5s;
+  border-radius: 10%;
+}
+.header_link-1:hover {
+  color: hsl(263, 91%, 46%); 
+}
+.header_link-2:hover {
+  color: hsl(263, 91%, 46%); 
+}
+.link-1:hover {
+  color: hsl(263, 91%, 46%); 
+}
+.link-2:hover {
+  color: hsl(263, 91%, 46%); 
+}
