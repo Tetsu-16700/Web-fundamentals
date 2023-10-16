@@ -6,17 +6,24 @@
     --spacing-4: 16px;
   }
   
+.body-index{
+  height: 100vh;
+  margin: 0;
+}
   .index{
-    flex-direction: column;    
+    display: flex;
     background: hsl(0, 0%, 100%);
+    height: 100%;
+    align-items: center;
+    justify-content: center;
   }
    .container {
     display: flex;
     padding: 0 var(--container-padding);
     flex-direction: column;
     align-items: center;
-    align-self: stretch;
-    margin: 378px 80px; 
+    
+  
   }
  .logo-1 {
     display: flex;
