@@ -13,8 +13,13 @@
   }
   
   .section {
-    padding: var(--spacing-4) 0;
+    
     flex-direction: column;
+    padding: 16px 96px;
+    position: fixed;
+    background-color: white;
+    top: 0;
+    width: -webkit-fill-available;
   }
   
   .header {

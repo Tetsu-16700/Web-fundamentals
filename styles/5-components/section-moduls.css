@@ -6,6 +6,19 @@
     --spacing-2: 8px;
     --rounded: 4px;
   }
+
+  body{
+    width: 100%;
+  }
+
+  @media (max-width: 769px){
+    img,
+    .content-pre,
+    .header-p  {
+      width: 90%;
+    }
+  }
+  
   .section-moduls, 
   .container-1, 
   .article, 
@@ -36,7 +49,9 @@
     flex-direction: column;
     align-items: center;
     gap: var(--rounded);
-    margin: 0 384px;
+    max-width: 672px;
+    margin: auto;
+    margin-top: 68px ;
   }
   .container-1 {
     max-width: 1280px;
