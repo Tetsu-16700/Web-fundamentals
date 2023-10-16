@@ -305,26 +305,26 @@
                             <div class="form-field">
                                 <p>Marca todas las correctas</p>
                                     <div>
-                                      <label><input class="radio" type="radio">`Persona` y `Mago` son funciones constructoras</label>
+                                      <label><input class="radio" type="radio" checked>`Persona` y `Mago` son funciones constructoras</label>
                                     </div>
                                     <div>
                                       <label><input class="radio" type="radio"> El prototipo de `harry` es `petunia`</label>
                                     </div>
                                     <div>
-                                      <label><input class="radio" type="radio"> Los objetos creado con la funcion `Mago` tiene acceso al metodo `presentarse`</label>
+                                      <label><input class="radio" type="radio"checked> Los objetos creado con la funcion `Mago` tiene acceso al metodo `presentarse`</label>
                                     </div>
                                     <div>
                                       <label><input class="radio" type="radio"> El uso de la palabra `new` es opcional</label>
                                     </div>
                                     <div>
-                                      <label><input class="radio" type="radio"> Solo el objeto `harry` tiene acceso al metodo `invocarHechizo`</label>
+                                      <label><input class="radio" type="radio"checked> Solo el objeto `harry` tiene acceso al metodo `invocarHechizo`</label>
                                     </div>
                             </div>
                             <div class="form-field">
                                 <p>`harry` es una instancia de `Persona `</p>
 
                                     <div>
-                                      <label><input class="radio" type="radio">true</label>
+                                      <label><input class="radio" type="radio" checked>true</label>
                                     </div>
                                     <div>
                                       <label><input class="radio" type="radio">false</label>
@@ -334,10 +334,10 @@
                                 <p>La expresion `harry.invocarHechizo.call(petunia)` retorna</p>
 
                                       <div>
-                                        <label><input class="radio" type="radio">'Harry invoca in hechizo'</label>
+                                        <label><input class="radio" type="radio">'Harry invoca un hechizo'</label>
                                       </div>
                                       <div>
-                                        <label><input class="radio" type="radio">'Petunia invoca un hechizo'</label>
+                                        <label><input class="radio" type="radio" checked>'Petunia invoca un hechizo'</label>
                                       </div>
                                       <div>
                                         <label><input class="radio" type="radio">Error</label>
@@ -348,6 +348,23 @@
                             JavaScript </p>
                             <div class="content-pre">   
                               <pre><code><span> //tu codigo aqui</span></code></pre>
+                              <pre><code><span>class Persona {</span></code></pre>
+                              <pre><code><span> constructor(nombre) {</span></code></pre>
+                              <pre><code><span>   this.nombre = nombre;</span></code></pre>
+                              <pre><code><span>  }</span></code></pre>
+                              <pre><code><span>  presentarse() {</span></code></pre>
+                              <pre><code><span>    return `Hola, mi nombre es ${this.nombre}`;</span></code></pre>
+                              <pre><code><span>  }</span></code></pre>
+                              <pre><code><span>  }</span></code></pre>
+                              <pre><code><span>  class Mago extends Persona {</span></code></pre>
+                              <pre><code><span>    constructor(nombre, casa) {</span></code></pre>
+                              <pre><code><span>    super(nombre);</span></code></pre>
+                              <pre><code><span>     this.casa = casa;</span></code></pre>
+                              <pre><code><span>  }</span></code></pre>
+                              <pre><code><span>   invocarHechizo() {</span></code></pre>
+                              <pre><code><span>   return `${this.nombre} invoca un hechizo`;</span></code></pre>
+                              <pre><code><span>   }</span></code></pre>
+                              <pre><code><span>   }</span></code></pre>
 
                               <pre><code><span> const petunia = new Persona ("Petunia");</span></code></pre>
                               <pre><code><span> const harry = new Mago("Harry", "Gryffindor");</span></code></pre>
